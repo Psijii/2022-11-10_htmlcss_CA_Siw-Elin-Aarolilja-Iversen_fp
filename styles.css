@@ -2,7 +2,7 @@
 
 body {
   background-image: 
-  linear-gradient(1deg, #0F1359 66.67%, rgba(15, 19, 89, 0) 100%),
+  linear-gradient(1deg, #0F1359 60%, rgba(15, 19, 89, 0) 100%),
   url('images/cyberpunk.jpg');
   height: 1500px;
   background-size: 1200px;
@@ -11,7 +11,7 @@ body {
   background-color: #0F1359;
   background-position-y: -50px;;
   color: white;
-  padding: 20px;
+  padding: 5px;
   font-family: Arial, Helvetica, sans-serif;}
 
 .header {
@@ -21,8 +21,8 @@ body {
   text-align: center;
 }
 .gamehub {
- padding: 6px, 16px, 6px, 16px;
- display: inline;
+  padding: 6px, 6px, 6px, 6px;
+  display: inline;
  
 }
 .gamehublogo {
@@ -41,7 +41,6 @@ body {
   font-size: large;
   margin: 25px 4px;
   border-radius: 5px;
-  
 }
    
  .button1 {
@@ -62,6 +61,18 @@ body {
   background-color: #0F1359;
   color: #CC79CB;
 }
+.latestrelease1 {
+  background-color: #0F1359;
+  border: none;
+  color: #CC79CB;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: large;
+  margin: 5px 4px;
+  border-radius: 5px;
+}
 .latestrelease {
   background-color: #CC79CB;
   color: white;
@@ -71,7 +82,6 @@ body {
   color:#CC79CB;
 }
 .cyberpunk {
-
 width: 141.5px;
 height: 181.65px;
 
@@ -79,6 +89,7 @@ height: 181.65px;
 .preorder {
   margin-left: 100px;
   width:500px;
+  
   
 }
 .outnow {
@@ -89,7 +100,5 @@ margin-top:-100px;
 }
 .darkgames {
   filter: brightness(50%);
-  width: 139.13px;
-  
-
+  width: 140px;
 }
