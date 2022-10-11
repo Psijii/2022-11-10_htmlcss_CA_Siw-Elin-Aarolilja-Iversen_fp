@@ -62,11 +62,22 @@ body {
   background-color: #0F1359;
   color: #CC79CB;
 }
-.cyberpunkpreorder1 {
+.latestrelease {
   background-color: #CC79CB;
   color: white;
 }
-.cyberpunkpreorder1:hover {
+.latestrelease:hover {
   background-color: white;
   color:#CC79CB;
+}
+.cyberpunk {
+
+width: 141.5px;
+height: 181.65px;
+
+}
+.preorder {
+  margin-left: 100px;
+  width:500px;
+  
 }
