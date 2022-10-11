@@ -16,18 +16,19 @@ body {
 
 .header {
   background-color: #0F1359;
-  border-radius: 5px; 
-  height: 90px;
-  text-align: center;
+  display:flex;
+  flex-flow:row;
+  justify-content: center;
 }
-.gamehub {
-  padding: 6px, 6px, 6px, 6px;
-  display: inline;
+.logo {
+  display: flex;
+  justify-content: center;
+  padding: 6px;
  
 }
-.gamehublogo {
-  float: left;
-  margin: 10px 15px 15px 10px;
+.logo img {
+  width: 155px;
+  height: auto;
 }
 
 .button {
@@ -89,6 +90,7 @@ height: 181.65px;
 .preorder {
   margin-left: 100px;
   width:500px;
+  justify-content: center;
   
   
 }
