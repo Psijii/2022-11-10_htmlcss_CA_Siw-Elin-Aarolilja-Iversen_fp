@@ -62,3 +62,11 @@ body {
   background-color: #0F1359;
   color: #CC79CB;
 }
+.cyberpunkpreorder1 {
+  background-color: #CC79CB;
+  color: white;
+}
+.cyberpunkpreorder1:hover {
+  background-color: white;
+  color:#CC79CB;
+}
