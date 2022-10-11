@@ -15,23 +15,18 @@ body {
   background-color: #0F1359;
   border-radius: 5px; 
   height: 90px;
-   
+  text-align: center;
 }
 .gamehub {
  padding: 6px, 16px, 6px, 16px;
  display: inline;
- margin: 30%;
+ 
 }
 .gamehublogo {
   float: left;
   position: relative;
   margin: 10px 15px 15px 10px;
-}
-
-.text-center {
-  text-align: center;
-  display: inline;
-  margin:60%;
+  
 
 }
 
@@ -39,16 +34,16 @@ body {
   background-color: #0F1359;
   border: none;
   color: #CC79CB;
-  padding: 16px 32px;
+  padding: 10px 28px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: large;
-  margin: 4px 2px;
+  margin: 4px 4px;
   border-radius: 5px;
   
 }
-      
+   
  .button1 {
    background-color: white; 
    color: #CC79CB; 
