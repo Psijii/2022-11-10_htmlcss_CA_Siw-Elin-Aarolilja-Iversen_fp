@@ -111,20 +111,18 @@ text-align: center;
 color: #46A637;
 display: flex;
 flex-flow: row;
-padding:10px;
-align-items: baseline;
+
+
 
 }
 .date {
 color:#CC79CB;
 font-size:small;
 padding:10px;
-align-items: baseline;
+
 
 }
 .games {
-  width: 160px;
-  padding:10px;
-  align-items: baseline;
-
+width: 160px;
+padding:10px;
 }
