@@ -115,8 +115,6 @@ flex-flow: row;
 .date {
 color:#CC79CB;
 font-size:small;
-display: flex;
-flex-flow: row;
 
 }
 .games {
