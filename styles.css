@@ -111,13 +111,16 @@ text-align: center;
 color: #46A637;
 display: flex;
 flex-flow: row;
+padding:20px;
 
 }
 .date {
 color:#CC79CB;
 font-size:small;
+padding:20px;
 
 }
 .games {
   width: 160px;
+  padding:20px;
 }
