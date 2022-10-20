@@ -7,15 +7,13 @@
   --horizontal-space: 5px;
   --font-size: 16px;
   --border-radius: 5px;
-
+  --border: none;
 }
-
-
 
 /* BACKGROUND */
 body {
   background-image: 
-  linear-gradient(1deg, #0F1359 55%, rgba(15, 19, 89, 0) 100%),
+  linear-gradient(1deg, #0F1359 55%, rgba(15, 19, 89, 0) 100%), 
   url('images/cyberpunk.jpg');
   height: 1200px;
   background-size: 1440px;
@@ -30,7 +28,8 @@ body {
   font-family: 'JetBrains Mono';
   font-size: var(--font-size);
   overflow-x: hidden; 
- }
+}  
+
  /* HAMBURGER MENU, modified code from https://codepen.io/erikterwan/pen/grOZxx */
  a
  {
@@ -175,7 +174,7 @@ body {
 
 .button {
   background-color: var(--white);
-  border: none;
+  border: var(--none);
   color: var(--pink);
   padding: 10px;
   text-align: center;
@@ -191,9 +190,35 @@ body {
    color: var(--pink);
 }
 
+.buttonprice {
+background-color: var(--green);
+color: var(--white);
+padding: 10px;
+text-align: center;
+display: inline-block;
+font-size: small;
+margin: 5px 5px;
+border-radius: var(--border-radius);
+border:none;
+margin-left: 20px;
+
+}
+.buttoncart {
+background-color: var(--pink);
+color: var(--white);
+padding: 10px;
+text-align: center;
+display: inline-block;
+font-size: small;
+margin: 5px 5px;
+border-radius: var(--border-radius);
+border:none;
+margin-right: 25px;
+}
+
 .buttonabout {
   background-color: var(--white);
-  border: none;
+  border: var(--none);
   color: var(--blue);
   padding: 10px;
   text-align: center;
@@ -203,40 +228,13 @@ body {
   margin: 5px 5px;
   border-radius: var(--border-radius);
   border:none;
-}
-
-.buttonprice {
-background-color: var(--green);
-color: var(--white);
-padding: 10px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: small;
-margin: 5px 5px;
-border-radius: var(--border-radius);
-border:none;
-margin-left: 20px;
-}
-.buttoncart {
-background-color: var(--pink);
-color: var(--white);
-padding: 10px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: small;
-margin: 5px 5px;
-border-radius: var(--border-radius);
-border:none;
-margin-right: 25px;
-
-}
-
+  font-size: 14px;
+  
 }
 .buttonabout:hover {
   background-color: var(--white);
   color: var(--pink);
+  font-size: 14px;
 }
 /* DROPDOWN BUTTONS */
 .dropbtn {
@@ -244,7 +242,7 @@ margin-right: 25px;
   color: var(--pink);
   padding: 10px;
   font-size: 16px;
-  border: none;
+  border: var(--none);
   cursor: pointer;
   margin: 5px 5px;
   border-radius: var(--border-radius);
@@ -298,7 +296,7 @@ color: var(--pink);
 /* RELEASED CONTENT AND PREORDERS*/
 .release {
   background-color: var(--pink);
-  border: none;
+  border: var(--none);
   color: var(--white);
   padding: 5px 5px;
   text-align: center;
