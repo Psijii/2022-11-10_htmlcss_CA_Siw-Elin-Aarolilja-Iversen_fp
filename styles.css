@@ -371,28 +371,27 @@ padding:5px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-    
-  }
+}
   
 .productcontent {
   margin: 10px;
   font-size: 1.25rem;
   font-weight: normal;
   line-height: 1.5rem;
-  }
+}
 .productcontent h3 {
   margin:10px;
   font-size: 1.25rem;
   font-weight: normal;
   line-height: 1.5rem;
-  }
+}
   
 .productcontent p {
   font-size: 0.875rem;
   font-weight: normal;
   line-height: 1.5rem;
   text-align: center;
-  }
+}
   
 .productbottom {
   width: 100%;
@@ -404,7 +403,6 @@ padding:5px;
   line-height: 1.125rem;
   text-transform: uppercase;
 }
-
 
 /* FOOTER */
 .footer {
@@ -419,8 +417,8 @@ padding:5px;
  justify-content: center;
  vertical-align: middle;
  border-radius: var(--border-radius);
-
 }
+
 .footerlogo img {
  width: 86px;
  padding: 15px;
