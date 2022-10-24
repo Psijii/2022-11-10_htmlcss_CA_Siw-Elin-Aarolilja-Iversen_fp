@@ -349,9 +349,8 @@ margin-left: 200px;
 text-align: center;
 }
 .latestrelease img {
-width: 142px;
-height: 182px;
- margin: auto;
+width: 200px;
+margin: auto;
 border-radius: var(--border-radius);
 }
 
