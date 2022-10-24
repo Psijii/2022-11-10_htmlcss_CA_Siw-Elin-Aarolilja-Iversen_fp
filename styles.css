@@ -350,62 +350,39 @@ padding:5px;
 }
 
 /*PRODUCT CARDS */
-
-.container {
-  display:flex;
-  flex-direction: row;
-  justify-content: space-between;
-  
-}
-.productwrapper {
-  width:350px;
-  height: 400px;
-  background-color: var(--pink);
-  text-align: left;
-  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
-  border-radius: var(--border-radius);
-  overflow: hidden;
-  padding:5px;
-  margin:10px;
-}
-  
-.producthead {
-  height: 350px;
-  width: 220px;
-  background-image: url(images/GameHub_covers10.jpg);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-  
-.productcontent {
-  font-size: 1.25rem;
-  font-weight: normal;
-  line-height: 1.5rem;
-}
-.productcontent h3 {
-  font-size: 1.25rem;
-  font-weight: normal;
-  line-height: 1.5rem;
-}
-  
-.productcontent p {
-  font-size: 0.875rem;
-  font-weight: normal;
-  line-height: 1.5rem;
-  text-align: center;
-}
-  
-.productbottom {
-  width: 100%;
-  position: absolute;
-  bottom: 4px;
+.wrapper {
+  display: flex;
   padding: 10px;
-  color: var(--white);
-  font-size: 0.75rem;
-  line-height: 1.125rem;
-  text-transform: uppercase;
+  flex-wrap: nowrap;
+}
+
+.card {
+  max-width: 150px;
+  text-align: center;
+  padding: 10px;
+  max-height: 300px;
   
+}
+
+.price {
+  color: var(--green);
+  font-size: 20px;
+}
+
+.card button {
+  border: none;
+  padding: 12px;
+  color: white;
+  background-color: var(--pink);
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  border-radius: var(--border-radius);
+  
+}
+
+.card button:hover {
+  background-color: var(--green);
 }
 
 /* FOOTER */
