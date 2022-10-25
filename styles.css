@@ -33,29 +33,23 @@ body {
 }
 
 /*Content alignment  */
-.parent {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  height: 75rem;
-  }
-  
-  .div1 { grid-area: 1 / 1 / 2 / 6; }
-  .div2 { grid-area: 2 / 2 / 2 / 2; }
-  .div3 { grid-area: 2 / 3 / 3 / 6; }
-  .div4 { grid-area: 3 / 2 / 4 / 3; }
-  .div5 { grid-area: 3 / 3 / 4 / 4; }
-  .div6 { grid-area: 3 / 4 / 4 / 5; }
-  .div7 { grid-area: 4 / 2 / 5 / 3; }
-  .div8 { grid-area: 4 / 3 / 5 / 4; }
-  .div9 { grid-area: 4 / 4 / 5 / 5; }
-  .div10 { grid-area: 5 / 2 / 6 / 3; }
-  .div11 { grid-area: 5 / 3 / 6 / 4; }
-  .div12 { grid-area: 5 / 4 / 6 / 5; }
-  .div13 { grid-area: 6 / 1 / 7 / 6; }
-  
+.container {
+  display: grid; 
+  grid-auto-columns: 3fr; 
+  grid-template-columns: 56px 809px 35px; 
+  grid-template-rows: 108px 82px 445px 150px; 
+  gap: 6px 8px; 
+}
+.title {
+  display: grid; 
+  grid-template-columns: 3fr 3fr 3fr; 
+  grid-template-rows: 3fr 3.1fr 0.9fr; 
+  gap: 0px 0px; 
+  grid-area: 1 / 2 / 2 / 3; 
+}
+.links { grid-area: 2 / 2 / 3 / 3; }
+.footer { grid-area: 4 / 2 / 5 / 3; }
+.main { grid-area: 3 / 2 / 4 / 3; }
 
 .gameinfo {
   display: flex;
