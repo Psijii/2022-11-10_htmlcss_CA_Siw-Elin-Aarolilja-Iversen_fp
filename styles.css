@@ -1,3 +1,4 @@
+
 /* ROOT */
 :root {
   --blue: #0F1359;
@@ -112,7 +113,7 @@ html {
    display: block;
    width: 2.0625rem;
    height: 0.25rem;
-   margin-bottom:0.3125em;
+   margin-bottom:0.3125rem;
    position: relative;
    background: var(--pink);
    border-radius: var(--border-radius);
@@ -158,7 +159,7 @@ html {
  #menu
  {
    position: absolute;
-   width: 18.75rem;
+   width: 25rem;
    margin: -6.25rem 0.625rem;
    padding: 3.125rem;
    padding-top: 3.125rem;
