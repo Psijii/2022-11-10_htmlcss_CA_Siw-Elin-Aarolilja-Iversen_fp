@@ -18,7 +18,6 @@ body {
   url('images/cyberpunk.jpg');
   height: 75rem;
   background-size: 100%;
-  object-fit:contain;
   background-position: center;
   background-repeat: no-repeat;
   background-color: var(--blue);
