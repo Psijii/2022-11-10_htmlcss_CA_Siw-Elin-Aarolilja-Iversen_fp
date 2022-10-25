@@ -184,7 +184,7 @@ html {
    opacity: 1;
  }
  
- @media screen and (max-width: 48rem) {
+ @media screen and (max-width: 768px) {
    #menu {
      transform: none;
      opacity: 0;
