@@ -69,7 +69,7 @@ html {
 
 }
 
- /* HAMBURGER MENU, modified code from https://codepen.io/erikterwan/pen/grOZxx */
+/* HAMBURGER MENU, modified code from https://codepen.io/erikterwan/pen/grOZxx */
  a
  {
    text-decoration: none;
@@ -189,11 +189,9 @@ html {
      transform: none;
      opacity: 0;
      transition: opacity 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-     display: block;
-   width: 2.0625rem;
-   height: 0.25rem;
-   margin-bottom:0.3125rem;
-   position: relative;
+     position: absolute;
+     top: -0.4375rem;
+     left: -0.3125rem;
      
    }
  }
