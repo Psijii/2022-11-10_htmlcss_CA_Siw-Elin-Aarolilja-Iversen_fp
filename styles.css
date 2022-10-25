@@ -189,6 +189,12 @@ html {
      transform: none;
      opacity: 0;
      transition: opacity 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+     position: absolute;
+   width: 25rem;
+   margin: -6.25rem 0.625rem;
+   padding: 3.125rem;
+   padding-top: 3.125rem;
+   right: -18.75rem;
    }
  }
 
