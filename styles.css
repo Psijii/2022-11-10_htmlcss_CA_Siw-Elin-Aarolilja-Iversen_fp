@@ -28,26 +28,34 @@ body {
   font-family: 'JetBrains Mono';
   font-size: var(--font-size);
   overflow-x: hidden; 
-
-}
-
-/*Content alignment flexbox */
-.box {
-  width: 48.75rem;
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 0.625rem;
-  column-gap: 1.25rem;
-  margin:auto;
-  margin-top: 3.125rem;
-  padding: 0.625rem;
-  align-items: flex-start;
   
+
 }
 
-.box > * {
-  flex: 1;
-}
+/*Content alignment  */
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  height: 75rem;
+  }
+  
+  .div1 { grid-area: 1 / 1 / 2 / 6; }
+  .div2 { grid-area: 2 / 2 / 2 / 2; }
+  .div3 { grid-area: 2 / 3 / 3 / 6; }
+  .div4 { grid-area: 3 / 2 / 4 / 3; }
+  .div5 { grid-area: 3 / 3 / 4 / 4; }
+  .div6 { grid-area: 3 / 4 / 4 / 5; }
+  .div7 { grid-area: 4 / 2 / 5 / 3; }
+  .div8 { grid-area: 4 / 3 / 5 / 4; }
+  .div9 { grid-area: 4 / 4 / 5 / 5; }
+  .div10 { grid-area: 5 / 2 / 6 / 3; }
+  .div11 { grid-area: 5 / 3 / 6 / 4; }
+  .div12 { grid-area: 5 / 4 / 6 / 5; }
+  .div13 { grid-area: 6 / 1 / 7 / 6; }
+  
 
 .gameinfo {
   display: flex;
@@ -369,6 +377,8 @@ text-align: center;
   object-fit: cover;
   filter: brightness(50%);
   border-radius: var(--border-radius);
+  padding-top: 1em;
+  margin: auto;
   
 }
 
