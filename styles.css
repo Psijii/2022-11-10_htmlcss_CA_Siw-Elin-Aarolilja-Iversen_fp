@@ -17,7 +17,7 @@ body {
   linear-gradient(1deg, #0F1359 55%, rgba(15, 19, 89, 0) 100%), 
   url('images/cyberpunk.jpg');
   height: 75rem;
-  background-size: 90%;
+  background-size: 100%;
   object-fit:contain;
   background-position: center;
   background-repeat: no-repeat;
