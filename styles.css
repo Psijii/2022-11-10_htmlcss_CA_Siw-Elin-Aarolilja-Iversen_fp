@@ -29,10 +29,7 @@ body {
   font-family: 'JetBrains Mono';
   font-size: var(--font-size);
   overflow-x: hidden; 
-}  
-html {
-  margin:auto;
-  width:100%;
+
 }
 
 /*Content alignment flexbox */
