@@ -191,7 +191,7 @@ html {
      transition: opacity 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
      position: absolute;
      top: -0.4375rem;
-     left: -0.3125rem;
+     right: -0.3125rem;
      
    }
  }
