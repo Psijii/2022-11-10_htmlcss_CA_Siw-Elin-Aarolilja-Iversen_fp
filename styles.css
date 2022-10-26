@@ -157,7 +157,7 @@ p {
 	border-radius:var(--border-radius);
 }
 .games img {
-	width:250px;
+	width:15.625em;
 }
 /*styling the navbar/headermenu*/
 .navbar {
