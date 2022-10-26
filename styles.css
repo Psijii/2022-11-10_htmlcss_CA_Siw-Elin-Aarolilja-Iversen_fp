@@ -258,6 +258,7 @@ input[type=checkbox] {
 	}
 	.dropdown {
 		left:50%;
+    right:50%;
 		top:30px;
 		transform:translateX(35%);
 	}
