@@ -1,133 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="=device-, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GameHub - The universe of games</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
 </head>
 <body>
-<div class="header">
+<header>
+<nav class="navbar">
+<!--gamehub logo and link-->
 <div class="logo">
-        <a href="index.html">
-           <img class="logo" src="images/gamehub2_2.png" alt="GameHub Logo"></a>
-       </div>
-    <div class="dropdown">
-        <button class="button">OUR GAMES ></button>
-        <div class="dropdown-content">
-        <a href="games.html">Action</a>
-        <a href="games.html">Adventure</a>
-        <a href="games.html">Family</a>
-        </div>
-        <button class="button"><i class="fa fa-shopping-cart" style="font-size:large"></i></button>
-      </div>
- <nav role='navigation'>
-    <div id="menuToggle">
-      <!---hidden checkbox --->
-      <input type="checkbox" />
-    <!---fake hamhuberger-->
-      <span></span>
-      <span></span>
-      <span></span>
-      <!---menu stuff-->
-      <ul id="menu">
-          <center><a href="#"><li><button class="button"><i class="fa fa-shopping-cart" style="font-size:large"></i></button></li></a></center>
-        <a href="#"><li>Home</li></a>
-        <a href="#"><li>About</li></a>
-        <a href="#"><li>Info</li></a>
-        <a href="#"><li>Contact</li></a>
-      </ul>
-    </div>
-  </nav>
+	<a href="index.html">
+	<img class="logo" src="images/gamehub2_2.png" alt="GameHub Logo"></a>
 </div>
-</div> 
-
-
-<h1 class="outnow" style="margin: auto;">OUR GAMES OUT NOW ON GAMEHUB</h1>
-
-<p class="category">ACTION</p>
-
-<div class="wrapper">
-  <div class="card">
-  <img src="images/GameHub_covers6.jpg" alt="Space War">
-  <h3>Space War</h3>
-  <p class="price">€9,99</p>
-  <p><button>Add to cart</button></p>
+<!--navigation menu starts here-->
+<ul class="nav-links">
+	<!--haxxign the checkbox-->
+	<input type="checkbox" id="checkbox_toggle"/>
+	<label for="checkbox_toggle" class="hamburger">&#9776;</label>
+	<!--actualy navigation menus-->
+	<div class="menu">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="/">About</a></li>
+		<li class="services">
+		<a href="/">Our games</a>
+		<!--dropdown menu-->
+		<ul class="dropdown">
+			<li><a href="games.html">Action </a></li>
+			<li><a href="games.html">Adventure</a></li>
+			<li><a href="games.html">Sports</a></li>
+			<li><a href="games.html">Family</a></li>
+		</ul>
+		</li>
+		<li><a href="/">Pricing</a></li>
+		<li><a href="/">Contact</a></li>
+	</div>
+</ul>
+</nav>
+</header>
+<div class="cards"><!--al lthe cards are related to the grid system found in .card and .cards css-file-->
+	<div class="card"><!--card one--></div>
+	<div class="card"><!--card two--></div>
+	<div class="card"> <!--card three--></div>
+	<div class="card"><!--card four--></div>
+	<div class="card"><!--card five--></div>
+	<div class="card"><!--card six--></div>
+	<div class="card"><!--card eight--></div>
+		
 </div>
-<div class="card">
-  <img src="images/GameHub_covers4.jpg" alt="Furious">
-  <h3>Furious</h3>
-  <p class="price">€9,99</p>
-  <p><button>Add to cart</button></p>
-</div>
-<div class="card">
-  <img src="images/GameHub_covers3.jpg" alt="Black">
-  <h3>Black</h3>
-  <p class="price">€9,99</p>
-  <p><button>Add to cart</button></p>
-</div>
-<div class="card">
-  <img src="images/GameHub_covers8.jpg" alt="Boxer">
-  <h3>Boxer</h3>
-  <p class="price">€9,99</p>
-  <p><button>Add to cart</button></p>
-</div>
-</div>
-<p class="category">ADVENTURE & RPG</p>
-<div class="wrapper">
-  <div class="card">
-  <img src="images/GameHub_covers10.jpg" alt="Forge Legend">
-  <h3>Forge Legend</h3>
-  <p class="price">€9,99</p>
-  <p><button>Add to cart</button></p>
-</div>
-<div class="card">
-  <img src="images/GameHub_covers5.jpg" alt="Assassin">
-  <h3>Assassin</h3>
-  <p class="price">€9,99</p>
-  <p><button>Add to cart</button></p>
-</div>
-<div class="card">
-  <img src="images/GameHub_covers9.jpg" alt="Cyberpunk">
-  <h3>Cyberpunk</h3>
-  <p class="price">€9,99</p>
-  <p><button>Add to cart</button></p>
-</div></div>
-
-<p class="category">FAMILY & SPORTS</p>
-
-<div class="wrapper">
-  <div class="card">
-  <img src="images/GameHub_covers7.jpg" alt="Racing">
-  <h3>Racing</h3>
-  <p class="price">€9,99</p>
-  <p><button>Add to cart</button></p>
-</div>
-<div class="card">
-  <img src="images/GameHub_covers.jpg" alt="Ping Pong">
-  <h3>Ping Pong</h3>
-  <p class="price">€9,99</p>
-  <p><button>Add to cart</button></p>
-</div>
-<div class="card">
-  <img src="images/GameHub_covers2.jpg" alt="Superduper">
-  <h3>Superduper</h3>
-  <p class="price">€9,99</p>
-  <p><button>Add to cart</button></p>
-</div></div>
-
 <div class="footer">
-    <div class="footerlogo">
-        <a href="index.html">
-           <img src="images/gamehub2_2.png" alt="GameHub Logo"></a>
-           <button class="buttonabout hover">About us ></button>
-    </div>
+	<div class="footerlogo">
+		<a href="#">
+		<img src="images/gamehub2_2.png" alt="GameHub Logo"></a>
+		<button class="buttonabout hover">About us ></button>
+		<p>
+			Noroff FED CA autumn 2022 Siw Elin Årolilja Iversen
+		</p>
+	</div>
 </div>
-
-
-
 </body>
 </html>
