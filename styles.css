@@ -35,6 +35,7 @@ p {
 	padding:1rem;
 	height:auto;
 	border-radius:var(--border-radius);
+
 }
 .cards {
 	grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
@@ -44,6 +45,17 @@ p {
 	gap:10px;
 	padding: 10px;
 }
+
+.centerprice {
+	display: flex;
+	flex-flow: space-around;
+}
+
+
+
+
+	
+
 /* Buttons */
 .button {
 	background-color:var(--white);
@@ -66,25 +78,38 @@ p {
 	color:var(--white);
 	padding:0.625rem;
 	text-align:center;
-	display:inline-block;
 	font-size:small;
-	margin:0.3125em 0.3125em;
 	border-radius:var(--border-radius);
 	border:none;
-	margin-left:1.25rem;
+	margin: 10px;
+	
 }
 .buttoncart {
 	background-color:var(--pink);
 	color:var(--white);
 	padding:0.625rem;
 	text-align:center;
-	display:inline-block;
 	font-size:small;
-	margin:0.3125em 0.3125em;
 	border-radius:var(--border-radius);
 	border:none;
-	margin-right:1.5625rem;
+	margin: 10px;
+	
+
 }
+.buttoncart:hover {
+	background-color:var(--white);
+	color:var(--pink);
+	padding:0.625rem;
+	text-align:center;
+	display:inline-block;
+	font-size:small;
+	border-radius:var(--border-radius);
+	border:none;
+	margin: 10px;
+
+
+}
+
 .buttonabout {
 	background-color:var(--white);
 	border:var(--none);
@@ -154,11 +179,23 @@ p {
 	color:var(--pink);
 }
 .games {
-	border-radius:var(--border-radius);
+	display: flex;
+	flex-flow: space-between;
+}
+@media screen and (max-width: 768px) {
+	.games{
+		flex-direction: column;
+		width:180px;
+		border-radius: var(--border-radius);
+		padding: 3px;
+	}
 }
 .games img {
-	width:15.625em;
-}
+	width:180px;
+	border-radius: var(--border-radius);
+	padding: 3px;
+ }	
+
 /*styling the navbar/headermenu*/
 .navbar {
 	display:flex;
