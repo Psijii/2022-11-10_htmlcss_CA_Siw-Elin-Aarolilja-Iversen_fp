@@ -18,8 +18,14 @@ body {
 	font-family:Arial,Helvetica,sans-serif;
 	font-family:'JetBrains Mono';
 	font-size:var(--font-size);
-	overflow-x:hidden;
+	overflow-x:show;
 	padding:0.3em;
+}
+h1 {
+	text-align: center;
+}
+h2 {
+	color:var(--green);
 }
 a {
 	text-decoration:none;
@@ -29,6 +35,99 @@ li {
 }
 p {
 	color:var(--white);
+}
+/* navbar menu */
+.menu {
+	display:flex;
+	gap:1em;
+	font-size:18px;
+	color:var(--white);
+}
+.menu li:hover {
+	background-color:var(--blue);
+	border-radius:5px;
+	transition:0.3s ease;
+}
+.menu li {
+	padding: 5px 14px;
+	background-color:var(--blue);
+}
+/* drop down menu */
+.services {
+	position:relative;
+}
+.dropdown {
+	background-color:var(--blue);
+	padding:1em 0;
+	position:absolute;
+	display:none;
+	border-radius:5px;
+	top:35px;
+	z-index: 1000;
+	
+}
+.dropdown li+li {
+	margin-top:10px;
+	background-color:var(--blue);
+}
+.dropdown li {
+	padding:0.5em 1em;
+	width:8em;
+	text-align:center;
+	background-color:var(--blue);
+}
+.dropdown li:hover {
+	background-color:var(--pink);
+}
+.services:hover .dropdown {
+	display: block;
+}
+/*responsive menu */
+input[type=checkbox] {
+	display: none;
+}
+/*hamburger menu*/
+.hamburger {
+	display:none;
+	font-size:24px;
+	user-select: none;
+}
+/*media queries for responsive desgin */
+@media (max-width:768px) {
+	.menu {
+		display:none;
+		position:absolute;
+		background-color:var(--blue);
+		right:0;
+		left:0;
+		text-align:center;
+		padding:16px 0;
+	}
+	.menu li:hover {
+		display:inline-block;
+		background-color:var(--pink);
+		transition:0.3s ease;
+	}
+	.menu li+li {
+		margin-top:12px;
+		background-color: var(--blue);
+	}
+	input[type=checkbox]:checked ~ .menu {
+		display:block;
+	}
+	.hamburger {
+		display:block;
+	}
+	.dropdown {
+		top: -50px;
+		transform:translateX(35%);
+		z-index: 1000;
+		background-color: var(--blue);
+	}
+	.dropdown li:hover {
+		background-color: var(--blue)
+		
+	}
 }
 .card {
 	color:var(--white);
@@ -201,12 +300,6 @@ p {
 	border-radius: var(--border-radius);
 }
 /* games, content, and headlines */
-.h2game {
-	color:var(--green);
-	display:flex;
-	flex-flow:row;
-	margin:auto;
-}
 .date {
 	color:var(--pink);
 }
@@ -224,7 +317,6 @@ p {
 		flex-direction: column;
 		width:200px;
 		border-radius: var(--border-radius);
-		
 	}
 }
 
@@ -249,92 +341,7 @@ p {
 .logo img {
 	width: 130px;
 }
-/* navbar menu */
-.menu {
-	display:flex;
-	gap:1em;
-	font-size:18px;
-	color:var(--white);
-}
-.menu li:hover {
-	background-color:var(--blue);
-	border-radius:5px;
-	transition:0.3s ease;
-}
-.menu li {
-	padding: 5px 14px;
-}
-/* drop down menu */
-.services {
-	position:relative;
-}
-.dropdown {
-	background-color:var(--blue);
-	padding:1em 0;
-	position:absolute;
-	display:none;
-	border-radius:5px;
-	top:35px;
-}
-.dropdown li+li {
-	margin-top:10px;
-}
-.dropdown li {
-	padding:0.5em 1em;
-	width:8em;
-	text-align:center;
-}
-.dropdown li:hover {
-	background-color:var(--pink);
-}
-.services:hover .dropdown {
-	display: block;
-}
-/*responsive menu */
-input[type=checkbox] {
-	display: none;
-}
-/*hamburger menu*/
-.hamburger {
-	display:none;
-	font-size:24px;
-	user-select: none;
-}
-/*media queries for responsive desgin */
-@media (max-width:768px) {
-	.menu {
-		display:none;
-		position:absolute;
-		background-color:var(--blue);
-		right:0;
-		left:0;
-		text-align:center;
-		padding:16px 0;
-	}
-	.menu li:hover {
-		display:inline-block;
-		background-color:var(--pink);
-		transition:0.3s ease;
-	}
-	.menu li+li {
-		margin-top:12px;
-	}
-	input[type=checkbox]:checked ~ .menu {
-		display:block;
-	}
-	.hamburger {
-		display:block;
-	}
-	.dropdown {
-		left:50%;
-    right:50%;
-		top:30px;
-		transform:translateX(35%);
-	}
-	.dropdown li:hover {
-		background-color: var(--blue)
-	}
-}
+
 /*footer styles*/
 .footer {
 	background:rgba(234,177,233,0.36);
