@@ -29,6 +29,7 @@ h2 {
 }
 a {
 	text-decoration:none;
+	color: var(--pink);
 }
 li {
 	list-style:none;
@@ -125,8 +126,8 @@ input[type=checkbox] {
 		background-color: var(--blue);
 	}
 	.dropdown li:hover {
-		background-color: var(--blue)
-		
+		background-color: var(--pink);
+	
 	}
 }
 .card {
@@ -360,3 +361,48 @@ input[type=checkbox] {
 	vertical-align:middle;
 	margin: auto;
 }
+
+/* login-form, dummy version */
+   
+form {   
+	 border: none;
+ }   
+input[type=text], input[type=password] {   
+	 width: 100%;   
+	 margin: 8px 0;  
+	 padding: 12px 20px;   
+	 display: inline-block;   
+	 border: var(--pink);
+	 box-sizing: border-box;   
+  
+ }   
+.btnlogin {
+	background-color:var(--pink);
+	border:var(--none);
+	color:var(--white);
+	padding:0.625rem;
+	text-align:center;
+	display:inline-block;
+	margin:4px;
+	border-radius:var(--border-radius);
+	width: 100%;
+}
+
+.cancelbtn {   
+	 width: auto;   
+	 background-color:var(--pink);
+	border:var(--none);
+	color:var(--white);
+	padding:0.625rem;
+	text-align:center;
+	display:inline-block;
+	margin:4px;
+	border-radius:var(--border-radius);
+ }   
+.container {   
+	 padding: 25px;   
+	 background-color: var(--blue);
+	 max-width: 350px;
+	 margin: auto;
+	 border-radius: var(--border-radius);
+ }  
