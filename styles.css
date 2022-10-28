@@ -387,10 +387,14 @@ input[type=text], input[type=password] {
 	border-radius:var(--border-radius);
 	width: 100%;
 }
+.btnlogin:hover {
+	background-color: white;
+	color: var(--pink);
+}
 
 .cancelbtn {   
-	 width: auto;   
-	 background-color:var(--pink);
+	width: auto;   
+	background-color:var(--pink);
 	border:var(--none);
 	color:var(--white);
 	padding:0.625rem;
@@ -398,7 +402,13 @@ input[type=text], input[type=password] {
 	display:inline-block;
 	margin:4px;
 	border-radius:var(--border-radius);
- }   
+}
+.cancelbtn:hover {
+	background-color: var(--white);
+	color: var(--pink);
+}
+
+ 
 .container {   
 	 padding: 25px;   
 	 background-color: var(--blue);
