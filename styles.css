@@ -32,32 +32,73 @@ p {
 }
 .card {
 	color:var(--white);
-	padding:1rem;
+	padding:2px;
 	height:auto;
 	border-radius:var(--border-radius);
 
 }
 .cards {
 	grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-	max-width:800px;
+	max-width:650px;
 	margin:0 auto;
 	display:grid;
-	gap:10px;
+	gap:5px;
 	padding: 10px;
 }
 
-.centerprice {
+/*PRODUCT CARDS */
+.wrapper {
 	display: flex;
-	flex-flow: space-around;
+	padding: 10px;
+	flex-wrap: nowrap;
+	width: 800px;
+	margin:auto;
+  }
+  @media screen and (max-width: 768px) {
+	.wrapper{
+		flex-direction: column;
+		width:180px;
+		border-radius: var(--border-radius);
+		padding: 3px;
+	}
 }
-
-
-
-
-	
-
+  .productcard {
+	max-width: 150px;
+	text-align: center;
+	padding: 3px;
+  }
+  .productcard img {
+	max-width: 150px;
+	border-radius: var(--border-radius);
+  }
+  
+  .price {
+	color: var(--green);
+	font-size: 20px;
+  }
+  
+  .productcard button {
+	border: none;
+	padding: 5px;
+	color: white;
+	background-color: var(--pink);
+	text-align: center;
+	width: 100%;
+	font-size: 16px;
+	border-radius: var(--border-radius);
+  }
+  
+  .productcard button:hover {
+	background-color: var(--green);
+  }
+  
+  .category {
+	font-size: x-large;
+	padding: 5px;
+	text-align: center;
+  }
 /* Buttons */
-.button {
+.btn {
 	background-color:var(--white);
 	border:var(--none);
 	color:var(--pink);
@@ -69,22 +110,12 @@ p {
 	margin:4px;
 	border-radius:var(--border-radius);
 }
-.button:hover {
+.btn:hover {
 	background-color:var(--blue);
 	color:var(--pink);
 }
-.buttonprice {
-	background-color:var(--green);
-	color:var(--white);
-	padding:0.625rem;
-	text-align:center;
-	font-size:small;
-	border-radius:var(--border-radius);
-	border:none;
-	margin: 10px;
-	
-}
-.buttoncart {
+
+.btncart {
 	background-color:var(--pink);
 	color:var(--white);
 	padding:0.625rem;
@@ -96,7 +127,7 @@ p {
 	
 
 }
-.buttoncart:hover {
+.btncart:hover {
 	background-color:var(--white);
 	color:var(--pink);
 	padding:0.625rem;
@@ -110,7 +141,7 @@ p {
 
 }
 
-.buttonabout {
+.btnabt {
 	background-color:var(--white);
 	border:var(--none);
 	color:var(--blue);
@@ -124,7 +155,7 @@ p {
 	border:none;
 	font-size:0.875rem;
 }
-.buttonabout:hover {
+.btnabt:hover {
 	background-color:var(--white);
 	color:var(--pink);
 	font-size: 0.875rem;
@@ -157,6 +188,7 @@ p {
 .outnow {
 	text-align:center;
 	color:var(--white);
+	margin: auto;
 }
 .overlay {
 	filter:brightness(50%);
@@ -182,19 +214,19 @@ p {
 	display: flex;
 	flex-flow: space-between;
 }
+.games img {
+	max-width: 250px;
+	border-radius: var(--border-radius);	
+ }	
+
 @media screen and (max-width: 768px) {
 	.games{
 		flex-direction: column;
-		width:180px;
+		width:200px;
 		border-radius: var(--border-radius);
-		padding: 3px;
+		
 	}
 }
-.games img {
-	width:180px;
-	border-radius: var(--border-radius);
-	padding: 3px;
- }	
 
 /*styling the navbar/headermenu*/
 .navbar {
