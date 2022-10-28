@@ -11,47 +11,47 @@
     
 </head>
 <body>
-<div class="header">
-<div class="logo">
-        <a href="index.html">
-           <img class="logo" src="images/gamehub2_2.png" alt="GameHub Logo"></a>
-       </div>
-   <div class="dropdown">
-        <button class="button">OUR GAMES ></button>
-    <div class="dropdown-content">
-        <a href="games.html">Action</a>
-        <a href="games.html">Adventure</a>
-        <a href="games.html">Family</a>
-    </div>
-        <button class="button"><i class="fa fa-shopping-cart" style="font-size:large"></i></button>
-     </div>
- <nav role='navigation'>
-    <div id="menuToggle">
-<!---hidden checkbox --->
-      <input type="checkbox" />
-<!---fake hamhuberger-->
-      <span></span>
-      <span></span>
-      <span></span>
-<!---menu stuff-->
-      <ul id="menu">
-          <center><a href="#"><li><button class="button"><i class="fa fa-shopping-cart" style="font-size:large"></i></button></li></a></center>
-        <a href="#"><li>Home</li></a>
-        <a href="#"><li>About</li></a>
-        <a href="#"><li>Info</li></a>
-        <a href="#"><li>Contact</li></a>
-      </ul>
-    </div>
-  </nav>
+    <nav class="navbar">
+        <!--gamehub logo and link-->
+        <div class="logo">
+            <a href="index.html">
+            <img class="logo" src="images/gamehub2_2.png" alt="GameHub Logo"></a>
+        </div>
+        <!--navigation menu starts here-->
+        <ul class="nav-links">
+            <!--haxxign the checkbox-->
+            <input type="checkbox" id="checkbox_toggle"/>
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <!--actualy navigation menus-->
+            <div class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="services">
+                <a href="games.html">Our games</a>
+                <!--dropdown menu-->
+                <ul class="dropdown">
+                    <li><a href="games.html">Action </a></li>
+                    <li><a href="games.html">Adventure</a></li>
+                    <li><a href="games.html">Sports</a></li>
+                    <li><a href="games.html">Family</a></li>
+                </ul>
+                </li>
+                <li><a href="buysell.html">Buy & Sell</a></li>
+                <li><a href="/">Contact</a></li>
+            </div>
+        </ul>
+        </nav>
+        </header>
 </div>
 </div> 
 
 <!--cyberpunk info alignments-->
-<h1 style="text-align: center;">IMMORTAL IN CYBERPUNK</h1>
+<h1>IMMORTAL IN CYBERPUNK</h1>
 
-<div class="gameinfo">
+<div class="latestrelease">
 
-    <img src="images/GameHub_covers9.jpg">
+    <img src="images/GameHub_covers9.jpg"></div>
+    <div class="wrapper">
 <p>
 Cyberpunk is an open-world, action-adventure story set in Night City, a megalopolis obsessed with power, 
 glamour and body modification. Assume the role of V, a mercenary outlaw going after a one-of-a-kind implant that is the key to immortality. 
