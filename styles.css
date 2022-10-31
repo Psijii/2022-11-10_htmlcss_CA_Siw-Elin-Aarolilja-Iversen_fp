@@ -38,8 +38,14 @@ a {
 	text-decoration:none;
 }
 li {
-	list-style:none;
-	
+	list-style:none;	
+}
+.mywrapper {
+	margin: 0 auto;
+	min-width: 320px;
+	max-width: 1200px;
+	align-content: center;
+
 }
 /*select text*/
 ::-moz-selection { /* Code for Firefox */
@@ -59,7 +65,7 @@ li {
 	height: 100%;
 	padding: 10px;
 	gap: 5px;
-	margin-top: -200px;
+	margin-top: -250px;
 	align-items:center;
 	flex-direction: row;
 	justify-content: center;
