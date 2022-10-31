@@ -105,24 +105,8 @@ li {
 	filter:brightness(100%);
 	transition: filter 1s ease-out 0.1ms;
 }
-@media only screen and (max-width: 700px) {
-	.flex-games {
-	  width: 49.99999%;
-	  margin: 6px 0;
-	}
-  }
-  
-  @media only screen and (max-width: 500px) {
-	.responsive {
-	  width: 100%;
-	}
-  }
-  
-  .clearfix:after {
-	content: "";
-	display: table;
-	clear: both;
-  }
+
+ 
 .releaseflex {
     display: flex;
     align-items: flex-start; 
