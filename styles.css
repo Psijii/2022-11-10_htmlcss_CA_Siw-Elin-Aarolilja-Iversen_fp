@@ -7,6 +7,12 @@
 	--font-size:1em;
 	--border-radius:0.3125em;
 }
+/*chrome img rendering fix */
+img {
+	border: none;
+	transform: translateZ(1px);
+	}
+/*bg styles etc */
 body {
 	background-image:url('images/gamehubbg.jpg');
 	height:100%;
@@ -19,8 +25,7 @@ body {
 	font-family:'JetBrains Mono';
 	font-size:var(--font-size);
 	overflow-x:hidden;
-	padding:0.3em;
-
+	padding:15px;
 }
 h1 {
 	text-align: center;
@@ -39,6 +44,7 @@ li {
 p {
 	color:var(--white);
 }
+/* flex alignments for games */
 .flex-games {
 	display: flex;
 	height: 100%;
@@ -51,28 +57,28 @@ p {
 	}
 @media screen and (max-width: 768px) {
 	.flex-games{
-			display: flex;
-			flex-direction: row; 
-			flex-wrap: wrap; 
-			align-content: flex-start;
-			width:150px;
-			border-radius: var(--border-radius);
-			margin: 0px;
+		display: flex;
+		flex-direction: row; 
+		flex-wrap: wrap; 
+		align-content: flex-start;
+		width:150px;
+		border-radius: var(--border-radius);
+		margin: 0px;
 		}
 	}
-/*flex box*/
+/*flex box for index page*/
 .flex-container {
-display: flex;
-justify-content: space-between; 
-align-items: flex-start;
-height: 100%;
-padding: 10px;
-gap: 5px;
+	display: flex;
+	justify-content: space-between; 
+	align-items: flex-start;
+	height: 100%;
+	padding: 10px;
+	gap: 5px;
 }
 
 .flex-container > div{
-border-radius: 5px;
-padding: 8px;
+	border-radius: 5px;
+	padding: 8px;
 }
 .overlay {
 	text-align:center;
@@ -99,6 +105,23 @@ padding: 8px;
 		border-radius: var(--border-radius);
 	}
 }
+.gameinfo {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: auto;
+	
+}
+.gameinfo img {
+	max-width: 200px;
+	border-radius:var(--border-radius);
+}
+.gameprice {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
 .latestrelease {
 	width:200px;
 	text-align:center;
@@ -219,7 +242,7 @@ input[type=checkbox] {
 }
 .cards {
 	grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-	max-width:900px;
+	max-width:600px;
 	margin:0 auto;
 	display:grid;
 	gap:5px;
@@ -284,11 +307,12 @@ input[type=checkbox] {
 	color:var(--pink);
 	padding:0.625rem;
 	text-align:center;
-	text-decoration:none;
 	display:inline-block;
 	font-size:large;
 	margin:4px;
 	border-radius:var(--border-radius);
+	font-family:Arial,Helvetica,sans-serif;
+	font-family:'JetBrains Mono';
 }
 .btn:hover {
 	background-color:var(--blue);
@@ -298,38 +322,79 @@ input[type=checkbox] {
 .btncart {
 	background-color:var(--pink);
 	color:var(--white);
-	padding:0.625rem;
+	padding:5px;
 	text-align:center;
-	font-size:small;
 	border-radius:var(--border-radius);
 	border:none;
 	margin: 10px;
+	font-family:Arial,Helvetica,sans-serif;
+	font-family:'JetBrains Mono';
 }
 .btncart:hover {
 	background-color:var(--white);
 	color:var(--pink);
-	padding:0.625rem;
+	padding:5px;
 	text-align:center;
 	display:inline-block;
-	font-size:small;
 	border-radius:var(--border-radius);
 	border:none;
 	margin: 10px;
+	font-family:Arial,Helvetica,sans-serif;
+	font-family:'JetBrains Mono';
+}
+.btnprice {
+	background-color: var(--green);
+	color: var(--white);
+	padding: 5px;
+	text-align: center;
+	border-radius: var(--border-radius);
+	border:none;
+	font-family:Arial,Helvetica,sans-serif;
+	font-family:'JetBrains Mono';
+}
+.btnprice:hover {
+	color: var(--green);
+	background-color: var(--white);
+	padding: 5px;
+	text-align: center;
+	border-radius: var(--border-radius);
+	border:none;
+	font-family:Arial,Helvetica,sans-serif;
+	font-family:'JetBrains Mono';
 }
 
+.btnused {
+	color: var(--blue);
+	background-color: var(--white);
+	padding: 5px;
+	text-align: center;
+	border-radius: var(--border-radius);
+	border:none;
+	margin: 5px;
+	font-family:Arial,Helvetica,sans-serif;
+	font-family:'JetBrains Mono';
+}
+.btnused:hover {
+	background-color: var(--white);
+	color: var(--pink);
+	padding: 5px;
+	text-align: center;
+	border-radius: var(--border-radius);
+	border:none;
+	font-family:Arial,Helvetica,sans-serif;
+	font-family:'JetBrains Mono';
+}
 .btnabt {
 	background-color:var(--white);
 	border:var(--none);
 	color:var(--blue);
 	padding:0.625rem;
 	text-align:center;
-	text-decoration:none;
-	display:inline-block;
-	font-size:large;
 	margin:0.3125em 0.3125em;
 	border-radius:var(--border-radius);
 	border:none;
 	font-size:0.875rem;
+	
 }
 .btnabt:hover {
 	background-color:var(--white);
@@ -346,10 +411,14 @@ input[type=checkbox] {
 	font-size:1.2em;
 	margin:0.3125em 0.25rem;
 	border-radius:var(--border-radius);
+	font-family:Arial,Helvetica,sans-serif;
+	font-family:'JetBrains Mono';
 }
 .releasebtn:hover {
 	background-color:var(--white);
-	color:var(--pink);
+	color:var(--green);
+	font-family:Arial,Helvetica,sans-serif;
+	font-family:'JetBrains Mono';
 
 }
 
@@ -385,7 +454,7 @@ input[type=checkbox] {
 	justify-content: center;
 	padding:10px;
 	background-color:var(--blue);
-	color:white;
+	color:var(--white);
 	margin:auto;
 	border-radius:var(--border-radius);
 }
@@ -426,7 +495,7 @@ input[type=text], input[type=password] {
    width: 100%;
 }
 .btnlogin:hover {
-   background-color: white;
+   background-color: var(--white);
    color: var(--pink);
 }
 
