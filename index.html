@@ -14,13 +14,13 @@
 <!--gamehub logo and link-->
 <div class="logo">
 	<a href="index.html">
-	<img class="logo" src="images/gamehub2_2.png" alt="GameHub Logo"></a>
+		<img class="logo" src="images/gamehub2_2.png" alt="GameHub Logo"></a>
 </div>
 <!--navigation menu starts here-->
 <ul class="nav-links">
 	<!--haxxign the checkbox-->
 	<input type="checkbox" id="checkbox_toggle"/>
-	<label for="checkbox_toggle" class="hamburger">&#9776;</label>
+		<label for="checkbox_toggle" class="hamburger">&#9776;</label>
 	<!--actualy navigation menus-->
 	<div class="menu">
 		<li><a href="index.html">Home</a></li>
@@ -41,79 +41,51 @@
 </ul>
 </nav>
 </header>
-
-<div class="cards">
-	<div class="card">
-        <!--al lthe cards are related to the grid system found in .card and .cards css-file-->
-		<!--card one-->
-		<div class="latestrelease">
-			<h1>CYBERPUNK</h1>
-			<p>
-				Latest release on GameHub
-			</p>
-			<a href="cyberpunk.html"><button class="releasebtn"> BUY NOW</button></a>
-			<img src="images/GameHub_covers9.jpg" alt="Cyberpunk">
-		</div>
-	</div>
-	<div class="card">
-		<!--card two-->
-		<div class="outnow">
-			<h2>Out now on Gamehub!</h2>
-		</div>
-		<div class="overlay">
-			<img src="images/GameHub_covers8.jpg" alt="Boxer">
-			<img src="images/GameHub_covers10.jpg" alt="Forge Legend">
-			<img src="images/GameHub_covers3.jpg" alt="Black">
-			<img src="images/GameHub_covers6.jpg" alt="Space War">
-		</div>
-	</div>
-	<div class="card">
-		<h1>Latest news</h1><!--card three-->
-		<div class="games">
-			<img class="games" src="images/GameHub_covers2.jpg" alt="Superduper">
-		</div>
-	</div>
-	<div class="card">
-		<!--card four-->
-		<h2>SUPERDUPER</h2>
-		<p>OUT NOW</p>
-		<p class="date">24.08.2022</p>
-		<p>In this family-oriented game everyone are super and duper at everything! Try out the new dance moves, sing a song! Now out as digital download at Game Hub. Curabitur nisi tellus, euismod eget sagittis sit amet, elementum sit amet velit. Curabitur sed felis accumsan, aliquam tellus in, aliquet purus. Phasellus ac tellus commodo, feugiat odio ut, mattis quam. Praesent nec ante a enim ultrices convallis.
-		</p>
-	</div>
-	<div class="card">
-		<!--card five-->
-		<div class="games">
-			<img class="games" src="images/GameHub_covers10.jpg" alt="Forge Legend">
-		</div>
-	</div>
-	<div class="card">
-		<!--card six-->
-		<h2>FORGE LEGEND</h2>
-		<p>OUT NOW</p>
-		<p class="date">24.08.2022</p>
-		<p>Join the fierece elves in Forge Legend, and create your own destiny, be evil and rule the world as an empress, or be good and loyal to your subjects! Now out as digital download at Game Hub.
-		</p>
-	</div>
-	<div class="card">
-		<div class="games">
-			<img class="games" src="images/GameHub_covers7.jpg" alt="Forge Legend">
-		</div>
-	</div>
-	<div class="card">
-		<!--card eight-->
-		<h2>RACING</h2>
-		<p>REVIEW</p>
-		<p class="date">24.08.2022
-		</p>
-		<p> Play as the fierce legend Racer McRaceface in this latest game from Playbox, Racing! Now out as digital download at Game Hub. Curabitur nisi tellus, euismod eget sagittis sit amet, elementum sit amet velit. Curabitur sed felis accumsan, aliquam tellus in, aliquet purus. Phasellus ac tellus commodo, feugiat odio ut, mattis quam. Praesent nec ante a enim ultrices convallis.
-		</p>
-	</div>
+<!---latest release alignments-->
+<div class="releaseflex">
+   <div class="item1"> <h1>CYBERPUNK</h1></div>
+   <div class="item2"> <a href="cyberpunk.html"><button class="releasebtn"> LATEST RELEASE</button></a></div>
+   <div class="item3"><img class="latestrelease" src="images/GameHub_covers9.jpg" alt="Cyberpunk"></div>
 </div>
+<!---out now alignments-->
+<div class="flex-games">
+	<div class="overlay">
+		<h1>OUT NOW ON GAMEHUB</h1>
+			<div class="item1">
+			<img class="overlay" src="images/GameHub_covers8.jpg" alt="Boxer">
+			<img class="overlay" src="images/GameHub_covers10.jpg" alt="Forge Legend">
+			<img class="overlay" src="images/GameHub_covers3.jpg" alt="Black">
+			<img class="overlay" src="images/GameHub_covers6.jpg" alt="Space War">
+			<img class="overlay" src="images/GameHub_covers4.jpg" alt="Boxer"></div>
+		</div>
+</div>
+<div class="flex-container">
+	<div class="item1"><img class="games" src="images/GameHub_covers10.jpg" alt ="Forge Legend"></div>
+		<div class="item2"><h2>FORGE LEGEND - FIRST TRY</h2><p class="date">10.10.2022</p>
+	<p>Join the fierece elves in Forge Legend, and create your own destiny, 
+    be evil and rule the world as an empress, or be good and loyal to your subjects! 
+    Now out as digital download at Game Hub. Curabitur nisi tellus, euismod eget sagittis sit amet, 
+    elementum sit amet velit. Curabitur sed felis accumsan, aliquam tellus in, aliquet purus. 
+	Phasellus ac tellus commodo, feugiat odio ut, mattis quam.
+	Praesent nec ante a enim ultrices convallis.</p></div>
+</div>
+
+<div class="flex-container">
+	<div class="item1"><img class="games" src="images/GameHub_covers10.jpg" alt ="Forge Legend"></div>
+		<div class="item2"><h2>FORGE LEGEND - A REVIEW</h2><p class="date">10.10.2022</p>
+		<p>
+		Join the fierece elves in Forge Legend, and create your own destiny, 
+        be evil and rule the world as an empress, or be good and loyal to your subjects! 
+        Now out as digital download at Game Hub. Curabitur nisi tellus, euismod eget sagittis sit amet, 
+        elementum sit amet velit. Curabitur sed felis accumsan, aliquam tellus in, aliquet purus. 
+        Phasellus ac tellus commodo, feugiat odio ut, mattis quam. 
+        Praesent nec ante a enim ultrices convallis.</p></div>
+</div>
+
 <div class="footer">
 	<div class="footerlogo">
 		<a href="index.html">
-		<img src="images/gamehub2_2.png" alt="GameHub Logo"></a>
+			<img src="images/gamehub2_2.png" alt="GameHub Logo"></a>
 		<button class="btnabt hover">About us</button>
 		<p>Noroff FED CA autumn 2022 Siw Elin Årolilja Iversen
 		</p>

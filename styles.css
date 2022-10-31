@@ -18,11 +18,13 @@ body {
 	font-family:Arial,Helvetica,sans-serif;
 	font-family:'JetBrains Mono';
 	font-size:var(--font-size);
-	overflow-x:show;
+	overflow-x:hidden;
 	padding:0.3em;
+
 }
 h1 {
 	text-align: center;
+	color: var(--white);
 }
 h2 {
 	color:var(--green);
@@ -37,10 +39,84 @@ li {
 p {
 	color:var(--white);
 }
+.flex-games {
+	display: flex;
+	height: 100%;
+	padding: 10px;
+	gap: 5px;
+	margin-top: -200px;
+	align-items:center;
+	flex-direction: row;
+	justify-content: center;
+	}
+@media screen and (max-width: 768px) {
+	.flex-games{
+			display: flex;
+			flex-direction: row; 
+			flex-wrap: wrap; 
+			align-content: flex-start;
+			width:150px;
+			border-radius: var(--border-radius);
+			margin: 0px;
+		}
+	}
+/*flex box*/
+.flex-container {
+display: flex;
+justify-content: space-between; 
+align-items: flex-start;
+height: 100%;
+padding: 10px;
+gap: 5px;
+}
+
+.flex-container > div{
+border-radius: 5px;
+padding: 8px;
+}
+.overlay {
+	text-align:center;
+}
+.overlay img {
+	width:8.75em;
+	height:9.125em;
+	object-fit:cover;
+	border-radius: var(--border-radius);
+	filter:brightness(50%);
+}
+.releaseflex {
+    display: flex;
+    align-items: flex-start; 
+    flex-direction: column; 
+    flex-wrap: nowrap; 
+	align-content: center;
+	max-width: 200px;
+}
+@media screen and (max-width: 768px) {
+	.releaseflex{
+		flex-direction: column;
+		width:200px;
+		border-radius: var(--border-radius);
+	}
+}
+.latestrelease {
+	width:200px;
+	text-align:center;
+	margin:auto;
+	border-radius:var(--border-radius);
+
+}
+.latestrelease img {
+	margin:auto;
+	width: 200px;
+}
 /* navbar menu */
 
 .menu {
 	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 	gap:1em;
 	font-size:18px;
 	color:var(--white);
@@ -93,6 +169,7 @@ input[type=checkbox] {
 	display:none;
 	font-size:24px;
 	user-select: none;
+	
 }
 /*media queries for responsive desgin */
 @media (max-width:768px) {
@@ -131,6 +208,8 @@ input[type=checkbox] {
 	
 	}
 }
+
+/* grid for game page */
 .card {
 	color:var(--white);
 	padding:2px;
@@ -140,7 +219,7 @@ input[type=checkbox] {
 }
 .cards {
 	grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-	max-width:650px;
+	max-width:900px;
 	margin:0 auto;
 	display:grid;
 	gap:5px;
@@ -152,13 +231,13 @@ input[type=checkbox] {
 	display: flex;
 	padding: 10px;
 	flex-wrap: nowrap;
-	width: 800px;
+	width: 900px;
 	margin:auto;
   }
   @media screen and (max-width: 768px) {
 	.wrapper{
 		flex-direction: column;
-		width:300px;
+		width:400px;
 		border-radius: var(--border-radius);
 		padding: 3px;
 	}
@@ -181,7 +260,7 @@ input[type=checkbox] {
   .productcard button {
 	border: none;
 	padding: 5px;
-	color: white;
+	color: var(--white);
 	background-color: var(--pink);
 	text-align: center;
 	width: 100%;
@@ -271,32 +350,10 @@ input[type=checkbox] {
 .releasebtn:hover {
 	background-color:var(--white);
 	color:var(--pink);
+
 }
-.latestrelease {
-	width:250px;
-	text-align:center;
-	margin:auto;
-}
-.latestrelease img {
-	width:260px;
-	margin:auto;
-	border-radius:var(--border-radius);
-}
-.outnow {
-	text-align:center;
-	color:var(--white);
-	margin: auto;
-}
-.overlay {
-	filter:brightness(50%);
-	text-align:center;
-}
-.overlay img {
-	width:8.75em;
-	height:9.125em;
-	object-fit:cover;
-	border-radius: var(--border-radius);
-}
+
+
 /* games, content, and headlines */
 .date {
 	color:var(--pink);
@@ -304,6 +361,8 @@ input[type=checkbox] {
 .games {
 	display: flex;
 	flex-flow: space-between;
+	max-width: 200px;
+	border-radius: var(--border-radius);	
 }
 .games img {
 	max-width: 250px;
@@ -313,7 +372,7 @@ input[type=checkbox] {
 @media screen and (max-width: 768px) {
 	.games{
 		flex-direction: column;
-		width:200px;
+		width:150px;
 		border-radius: var(--border-radius);
 	}
 }
@@ -322,7 +381,8 @@ input[type=checkbox] {
 .navbar {
 	display:flex;
 	align-items:center;
-	justify-content:space-between;
+	flex-direction: row;
+	justify-content: center;
 	padding:10px;
 	background-color:var(--blue);
 	color:white;
@@ -340,6 +400,60 @@ input[type=checkbox] {
 	width: 130px;
 }
 
+/* login-form, dummy version */
+   
+form {   
+	border: none;
+}   
+input[type=text], input[type=password] {   
+	width: 100%;   
+	margin: 8px 0;  
+	padding: 12px 20px;   
+	display: inline-block;   
+	border: var(--pink);
+	box-sizing: border-box;   
+ 
+}   
+.btnlogin {
+   background-color:var(--pink);
+   border:var(--none);
+   color:var(--white);
+   padding:0.625rem;
+   text-align:center;
+   display:inline-block;
+   margin:4px;
+   border-radius:var(--border-radius);
+   width: 100%;
+}
+.btnlogin:hover {
+   background-color: white;
+   color: var(--pink);
+}
+
+.cancelbtn {   
+   width: auto;   
+   background-color:var(--pink);
+   border:var(--none);
+   color:var(--white);
+   padding:0.625rem;
+   text-align:center;
+   display:inline-block;
+   margin:4px;
+   border-radius:var(--border-radius);
+}
+.cancelbtn:hover {
+   background-color: var(--white);
+   color: var(--pink);
+}
+
+
+.container {   
+	padding: 25px;   
+	background-color: var(--blue);
+	max-width: 350px;
+	margin: auto;
+	border-radius: var(--border-radius);
+}  
 /*footer styles*/
 .footer {
 	background:rgba(234,177,233,0.36);
@@ -359,57 +473,3 @@ input[type=checkbox] {
 	margin: auto;
 }
 
-/* login-form, dummy version */
-   
-form {   
-	 border: none;
- }   
-input[type=text], input[type=password] {   
-	 width: 100%;   
-	 margin: 8px 0;  
-	 padding: 12px 20px;   
-	 display: inline-block;   
-	 border: var(--pink);
-	 box-sizing: border-box;   
-  
- }   
-.btnlogin {
-	background-color:var(--pink);
-	border:var(--none);
-	color:var(--white);
-	padding:0.625rem;
-	text-align:center;
-	display:inline-block;
-	margin:4px;
-	border-radius:var(--border-radius);
-	width: 100%;
-}
-.btnlogin:hover {
-	background-color: white;
-	color: var(--pink);
-}
-
-.cancelbtn {   
-	width: auto;   
-	background-color:var(--pink);
-	border:var(--none);
-	color:var(--white);
-	padding:0.625rem;
-	text-align:center;
-	display:inline-block;
-	margin:4px;
-	border-radius:var(--border-radius);
-}
-.cancelbtn:hover {
-	background-color: var(--white);
-	color: var(--pink);
-}
-
- 
-.container {   
-	 padding: 25px;   
-	 background-color: var(--blue);
-	 max-width: 350px;
-	 margin: auto;
-	 border-radius: var(--border-radius);
- }  
