@@ -36,12 +36,23 @@ h2 {
 }
 a {
 	text-decoration:none;
-	color: var(--pink);
 }
 li {
 	list-style:none;
 	
 }
+/*select text*/
+::-moz-selection { /* Code for Firefox */
+	color: var(--pink);
+	background: var(--white);
+  }
+  
+::selection {
+	color: var(--pink);
+	background: var(--white);
+  }
+
+
 /* flex alignments for games */
 .flex-games {
 	display: flex;
@@ -78,6 +89,8 @@ li {
 	border-radius: 5px;
 	padding: 8px;
 }
+/*latest games gallery*/
+
 .overlay {
 	text-align:center;
 }
@@ -88,6 +101,28 @@ li {
 	border-radius: var(--border-radius);
 	filter:brightness(50%);
 }
+.overlay img:hover {
+	filter:brightness(100%);
+	transition: filter 1s ease-out 0.1ms;
+}
+@media only screen and (max-width: 700px) {
+	.flex-games {
+	  width: 49.99999%;
+	  margin: 6px 0;
+	}
+  }
+  
+  @media only screen and (max-width: 500px) {
+	.responsive {
+	  width: 100%;
+	}
+  }
+  
+  .clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
 .releaseflex {
     display: flex;
     align-items: flex-start; 
@@ -147,6 +182,9 @@ li {
 .nav-links a {
 	color: var(--white);
 }
+.nav-links:hover {
+	color: var(--pink);
+}
 .menu {
 	display:flex;
 	flex-direction: row;
@@ -159,11 +197,13 @@ li {
 .menu li:hover {
 	background-color:var(--blue);
 	border-radius:5px;
+	color:var(--pink);
 	
 }
 .menu li {
 	padding: 5px 14px;
 	background-color:var(--blue);
+	color:var(--pink);
 }
 /* drop down menu */
 .services {
@@ -182,16 +222,18 @@ li {
 .dropdown li+li {
 	margin-top:10px;
 	color: var(--pink);
-		border-radius: 4px;
+	border-radius: 4px;
 }
 .dropdown li {
 	padding:0.5em 1em;
 	width:8em;
 	text-align:center;
 	background-color:var(--blue);
+	
 }
 .dropdown li:hover {
 	background-color:var(--pink);
+
 }
 .services:hover .dropdown {
 	display: block;
