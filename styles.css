@@ -26,7 +26,7 @@ body {
 	overflow-x:hidden;
 	padding:0.9375rem;
 	color: var(--white);
-	
+	z-index: 1;
 }
 
 h1 {
@@ -723,7 +723,7 @@ outline:0;
 }
 
 /*Media queries*/
-@media (max-width: 375px) {
+@media (max-width: 48rem) {
   .grid_info {
     grid-template-areas:
       'gameimg'
@@ -731,7 +731,7 @@ outline:0;
       'gameinfo';
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 48rem) {
 	.flex-games{
 		display: flex;
 		flex-direction: row; 
@@ -743,14 +743,14 @@ outline:0;
     padding: 0.3125rem;
 		}
 	}
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 48rem) {
 	.flex-container {
 		flex-direction: column;
 		width:21.875rem;
 		border-radius: var(--border-radius);
 	}
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 48rem) {
 	.releaseflex{
 		flex-direction: column;
 		width:12.5rem;
@@ -758,14 +758,14 @@ outline:0;
     padding: 0.3125rem;
 	}
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 48rem) {
 	.games{
 		flex-direction: column;
 		width:9.375rem;
 		border-radius: var(--border-radius);
 	}
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 48rem) {
 	.wrapper{
 		flex-direction: column;
 		width:25rem;
@@ -774,7 +774,7 @@ outline:0;
 		margin:auto;
 	}
 }
-@media(max-width: 375px) {
+@media(max-width: 48rem) {
 	.checkout {
 	flex-direction: column;
 	width: 100%;
@@ -782,7 +782,7 @@ outline:0;
 	overflow: hidden;
 	}
 }
-@media(max-width: 375px) {
+@media(max-width: 48rem) {
 	.shopwrapper {
 	flex-direction: column;
 	width: 100%;
@@ -790,7 +790,7 @@ outline:0;
 	overflow: hidden;
 	}
 }
-@media(max-width: 375px) {
+@media(max-width: 48rem) {
 	.subtotal {
 	flex-direction: column;
 	width: 100%;
@@ -798,7 +798,7 @@ outline:0;
 	overflow: hidden;
 	}
 }
-@media (max-width: 375px) {
+@media (max-width: 48rem) {
   .shopping-cart {
     width: 100%;
     height: auto;
