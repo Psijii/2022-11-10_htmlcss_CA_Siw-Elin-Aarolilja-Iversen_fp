@@ -725,82 +725,73 @@ outline:0;
 }
 
 /*Media queries*/
-@media (max-width: 48rem) {
-  .grid_info {
-    grid-template-areas:
-      'gameimg'
-      'buy'
-      'gameinfo';
-  }
-}
-@media screen and (max-width: 48rem) {
-	.flex-games{
+@media 
+screen and (max-width: 480px), (max-width: 768px) {
+
+.flex-games {
 		display: flex;
 		flex-direction: row; 
 		flex-wrap: wrap; 
 		align-content: flex-start;
-		width:23.75rem;
+		width:100%;
 		border-radius: var(--border-radius);
     margin: 0rem;
     padding: 0.3125rem;
 		}
-	}
-@media screen and (max-width: 48rem) {
-	.flex-container {
+.grid_info {
+	grid-template-areas:
+		'gameimg'
+		'buy'
+		'gameinfo'; 
+		}
+.flex-container {
 		flex-direction: column;
-		width:21.875rem;
+		width:100%;
 		border-radius: var(--border-radius);
 	}
-}
-@media screen and (max-width: 48rem) {
-	.releaseflex{
+
+	.releaseflex {
 		flex-direction: column;
-		width:12.5rem;
+		width:100%;
     border-radius: var(--border-radius);
     padding: 0.3125rem;
 	}
-}
-@media screen and (max-width: 48rem) {
+
 	.games{
 		flex-direction: column;
-		width:9.375rem;
+		width:100%;
 		border-radius: var(--border-radius);
 	}
-}
-@media screen and (max-width: 48rem) {
+
 	.wrapper{
 		flex-direction: column;
-		width:25rem;
+		width:100%;
 		border-radius: var(--border-radius);
 		padding: 0.1875rem;
 		margin:auto;
 	}
-}
-@media(max-width: 48rem) {
+
 	.checkout {
 	flex-direction: column;
-	width: 100%;
+	width:100%;
 	height: auto;
 	overflow: hidden;
 	}
-}
-@media(max-width: 48rem) {
+
 	.shopwrapper {
 	flex-direction: column;
 	width: 100%;
 	height: auto;
 	overflow: hidden;
 	}
-}
-@media(max-width: 48rem) {
+
 	.subtotal {
 	flex-direction: column;
 	width: 100%;
 	height: auto;
 	overflow: hidden;
 	}
-}
-@media (max-width: 48rem) {
+
   .shopping-cart {
     width: 100%;
     height: auto;
@@ -825,38 +816,34 @@ outline:0;
   .buttons {
     margin-right: 1.25rem;
   }
-}
-
-/*media queries for responsive desgined navbar */
-@media (max-width:48rem) {
-	.menu {
-		display:none;
-		position:absolute;
-		background-color:var(--blue);
-		color:var(--white);
-		right:0;
-		left:0;
-		text-align:center;
-		padding:1rem 0;
-		z-index: 1;
-		overflow: show;
+.menu {
+	display:none;
+	position:absolute;
+	background-color:var(--blue);
+	color:var(--white);
+	right:0;
+	left:0;
+	text-align:center;
+	padding:1rem 0;
+	overflow: show;
+	font-size: 100%;
 	}
-	.menu li:hover {
-		display:inline-block;
-		color:var(--pink);
+.menu li:hover {
+	display:inline-block;
+	color:var(--pink);
 		
 	}
-	.menu li+li {
-		margin-top:0.75rem;
-		background-color: var(--blue);
-		color: var(--white);
+.menu li+li {
+	margin-top:0.75rem;
+	background-color: var(--blue);
+	color: var(--white);
 	}
-	input[type=checkbox]:checked ~ .menu {
-		display:block;
+input[type=checkbox]:checked ~ .menu {
+	display:block;
 	}
-	.hamburger {
-		display:inline;
-		color:var(--white);
+.hamburger {
+	display:inline;
+	color:var(--white);
 	
 	}
 }
