@@ -565,7 +565,7 @@ input[type=text], select, textarea {
 .shopwrapper {
 	display: flex;
 	flex-wrap: nowrap;
-	width: 59.375rem;
+	width: 960px;
 	margin: 0 auto;
 	min-width: 20rem;
 	align-content: center;
@@ -573,7 +573,7 @@ input[type=text], select, textarea {
 	align-items: center;
 }
 .shopping-cart {
-  width: 40.625rem;
+  width: 660px;
   height: 37.5rem;
 	margin: auto;
 	color: var(--pink);
@@ -605,6 +605,7 @@ input[type=text], select, textarea {
 	margin-right: 3.125rem;
 	max-width: 8.75rem;
 	max-height: 8.75rem;
+	border-radius: var(--border-radius);
 }
 .description {
   padding-top: 0.625rem;
@@ -614,7 +615,8 @@ input[type=text], select, textarea {
 .description p {
   display: block;
   font-size: 1rem;
-  color: black;
+	color: black;
+	
 
 }
 .description p:first-child {
