@@ -834,6 +834,7 @@ outline:0;
 		text-align:center;
 		padding:1rem 0;
 		z-index: 1000;
+		overflow: show;
 	}
 	.menu li:hover {
 		display:inline-block;
