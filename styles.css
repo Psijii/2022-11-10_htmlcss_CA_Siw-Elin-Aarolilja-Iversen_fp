@@ -69,18 +69,7 @@ li {
 	flex-direction: row;
   justify-content: center;
 }
-@media screen and (max-width: 768px) {
-	.flex-games{
-		display: flex;
-		flex-direction: row; 
-		flex-wrap: wrap; 
-		align-content: flex-start;
-		width:380px;
-		border-radius: var(--border-radius);
-    margin: 0px;
-    padding: 5px;
-		}
-	}
+
 /*flex box for index page*/
 .flex-container {
 	display: flex;
@@ -95,13 +84,7 @@ li {
 	border-radius: 5px;
 	padding: 8px;
 }
-@media screen and (max-width: 768px) {
-	.flex-container {
-		flex-direction: column;
-		width:350px;
-		border-radius: var(--border-radius);
-	}
-}
+
 /*latest games gallery*/
 
 .overlay {
@@ -127,14 +110,7 @@ li {
 	justify-content: center;
 	max-width: 200px;
 }
-@media screen and (max-width: 768px) {
-	.releaseflex{
-		flex-direction: column;
-		width:200px;
-    border-radius: var(--border-radius);
-    padding: 0.3125rem;
-	}
-}
+
 .gameinfo {
 	display: flex;
 	flex-direction: column;
@@ -212,38 +188,7 @@ input[type=checkbox] {
 	user-select: none;
 	
 }
-/*media queries for responsive desgin */
-@media (max-width:768px) {
-	.menu {
-		display:none;
-		position:absolute;
-		background-color:var(--blue);
-		color:var(--white);
-		right:0;
-		left:0;
-		text-align:center;
-		padding:1rem 0;
-		z-index: 1000;
-	}
-	.menu li:hover {
-		display:inline-block;
-		color:var(--pink);
-		
-	}
-	.menu li+li {
-		margin-top:0.75rem;
-		background-color: var(--blue);
-		color: var(--white);
-	}
-	input[type=checkbox]:checked ~ .menu {
-		display:block;
-	}
-	.hamburger {
-		display:inline;
-		color:var(--white);
-	
-	}
-}
+
 
 /* grid for game page */
 .card {
@@ -271,15 +216,7 @@ input[type=checkbox] {
 	margin:auto;
 	color: var(--white);
   }
-  @media screen and (max-width: 768px) {
-	.wrapper{
-		flex-direction: column;
-		width:400px;
-		border-radius: var(--border-radius);
-		padding: 3px;
-		margin:auto;
-	}
-}
+
   .productcard {
 	max-width: 224px;
 	text-align: center;
@@ -454,13 +391,7 @@ input[type=checkbox] {
 	border-radius: var(--border-radius);	
  }	
 
-@media screen and (max-width: 768px) {
-	.games{
-		flex-direction: column;
-		width:150px;
-		border-radius: var(--border-radius);
-	}
-}
+
 
 
 /* gamehub logo */
@@ -586,7 +517,7 @@ input[type=text], select, textarea {
 .shopwrapper {
 	display: flex;
 	flex-wrap: nowrap;
-	width: 900px;
+	width: 950px;
 	margin: 0 auto;
 	min-width: 320px;
 	align-content: center;
@@ -594,7 +525,7 @@ input[type=text], select, textarea {
 	align-items: center;
 }
 .shopping-cart {
-  width: 600px;
+  width: 650px;
   height: 600px;
 	margin: auto;
 	color: var(--pink);
@@ -606,45 +537,43 @@ input[type=text], select, textarea {
 	
 }
 .title {
-  height: 20px;
-  border-bottom: 0px;
-  padding: 20px 30px;
+  height: 1.25rem;
+  border-bottom: 0rem;
+  padding: 1.25rem 1.875rem;
   color: black;
   font-size: 18px;
-  font-weight: 400;
 }
 .item {
-  padding: 20px 30px;
-  height: 120px;
+  padding: 1.25rem 1.875rem;
+  height: 7.5rem;
   display: flex;
 }
 .item:nth-child(3) {
-  border-top:  0px;
-  border-bottom:  0px;
+  border-top:  0rem;
+  border-bottom:  0rem;
 }
 
 .productimage img {
-	margin-right: 50px;
-	max-width: 140px;
-	max-height: 140px;
+	margin-right: 3.125rem;
+	max-width: 8.75rem;
+	max-height: 8.75rem;
 }
 .description {
-  padding-top: 10px;
-  margin-right: 60px;
-	width: 200px;
+  padding-top: 0.625rem;
+  margin-right: 3.75rem;
+	width: 12.5rem;
 }
 .description p {
   display: block;
-  font-size: 16px;
+  font-size: 1rem;
   color: black;
 
 }
 .description p:first-child {
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
 }
 .description p:last-child {
-  font-weight: 300;
-  margin-top: 8px;
+  margin-top: 0.5rem;
   color: var(--blue);
 }
 .description  h2 {
@@ -652,61 +581,61 @@ input[type=text], select, textarea {
 }
 
 .quantity {
-  padding-top: 20px;
-	margin-right: 60px;
-	width: 250px;
+  padding-top: 1.25rem;
+	margin-right: 3.75rem;
+	width: 15.625rem;
 
 }
 .quantity input {
   border: none;
   text-align: center;
-  width: 32px;
+  width: 2rem;
 }
 button[class*=button] {
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
   background-color: var(--white);
-  border-radius: 6px;
+  border-radius: 0.375rem;
   border: none;
   cursor: pointer;
 }
 .minus-btn img {
-  margin-bottom: 3px;
+  margin-bottom: 0.1875rem;
 }
 .plus-btn img {
-  margin-top: 2px;
+  margin-top: 0.125rem;
 }
 button:focus,
 input:focus {
-  outline:0;
+outline:0;
 }
 
 .total-price {
-  width: 83px;
-  padding-top: 27px;
+  width: 5.1875rem;
+  padding-top: 1.6875rem;
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
 	color: black;
 }
 
 .subtotal {
-	width: 300px;
-	height: 600px;
+	width: 18.75rem;
+	height: 37.5rem;
 	margin:auto;
 	background: #EAB1E9;
-	border-radius: 5px;
+	border-radius: 0.3125rem;
 	display: flex;
 	flex-direction: column;	
 	color: var(--blue);
-	text-indent: 15px;
-	padding: 5px;
+	text-indent: 0.9375rem;
+	padding: 0.3125rem;
 }
 .checkout {
-	width: 298px;
-	height: 80px;
+	width: 18.625rem;
+	height: 5rem;
 	background-color: var(--pink);
 	border-radius: var(--border-radius);
-	text-indent: 5px;
+	text-indent: 0.3125rem;
 }
 .checkout p {
 	font-size: small;
@@ -718,48 +647,8 @@ input:focus {
 .subtotal h1, h2, h3, h4 {
 	color: var(--blue);
 }
-@media(max-width: 800px) {
-	.shopwrapper {
-	flex-direction: column;
-	width: 100%;
-	height: auto;
-	overflow: hidden;
-	}
-}
-@media(max-width: 800px) {
-	.subtotal {
-	flex-direction: column;
-	width: 100%;
-	height: auto;
-	overflow: hidden;
-	}
-}
-@media (max-width: 800px) {
-  .shopping-cart {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-  }
-  .item {
-    height: auto;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .productimage img {
-		height: 100%;
-		margin:auto;
-  }
-  .productimage,
-  .quantity,
-  .description {
-    width: 100%;
-    text-align: center;
-		margin: auto;
-  }
-  .buttons {
-    margin-right: 20px;
-  }
-}
+
+
 
 /*footer styles*/
 .footer {
@@ -781,3 +670,130 @@ input:focus {
 	margin: auto;
 }
 
+/*Media queries*/
+@media screen and (max-width: 768px) {
+	.flex-games{
+		display: flex;
+		flex-direction: row; 
+		flex-wrap: wrap; 
+		align-content: flex-start;
+		width:380px;
+		border-radius: var(--border-radius);
+    margin: 0px;
+    padding: 5px;
+		}
+	}
+@media screen and (max-width: 768px) {
+	.flex-container {
+		flex-direction: column;
+		width:350px;
+		border-radius: var(--border-radius);
+	}
+}
+@media screen and (max-width: 768px) {
+	.releaseflex{
+		flex-direction: column;
+		width:200px;
+    border-radius: var(--border-radius);
+    padding: 0.3125rem;
+	}
+}
+@media screen and (max-width: 768px) {
+	.games{
+		flex-direction: column;
+		width:150px;
+		border-radius: var(--border-radius);
+	}
+}
+@media screen and (max-width: 768px) {
+	.wrapper{
+		flex-direction: column;
+		width:400px;
+		border-radius: var(--border-radius);
+		padding: 3px;
+		margin:auto;
+	}
+}
+@media(max-width: 768px) {
+	.checkout {
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	}
+}
+@media(max-width: 768px) {
+	.shopwrapper {
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	}
+}
+@media(max-width: 768px) {
+	.subtotal {
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	}
+}
+@media (max-width: 768px) {
+  .shopping-cart {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+	}
+	.item {
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .productimage img {
+		height: 100%;
+		margin:auto;
+  }
+  .productimage,
+  .quantity,
+  .description {
+    width: 100%;
+    text-align: center;
+		margin: auto;
+  }
+  .buttons {
+    margin-right: 20px;
+  }
+}
+
+/*media queries for responsive desgined navbar */
+@media (max-width:768px) {
+	.menu {
+		display:none;
+		position:absolute;
+		background-color:var(--blue);
+		color:var(--white);
+		right:0;
+		left:0;
+		text-align:center;
+		padding:1rem 0;
+		z-index: 1000;
+	}
+	.menu li:hover {
+		display:inline-block;
+		color:var(--pink);
+		
+	}
+	.menu li+li {
+		margin-top:0.75rem;
+		background-color: var(--blue);
+		color: var(--white);
+	}
+	input[type=checkbox]:checked ~ .menu {
+		display:block;
+	}
+	.hamburger {
+		display:inline;
+		color:var(--white);
+	
+	}
+}
