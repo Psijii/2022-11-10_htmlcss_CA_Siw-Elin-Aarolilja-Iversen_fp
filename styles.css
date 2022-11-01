@@ -91,6 +91,7 @@ li {
 
 .overlay {
 	text-align:center;
+	color: var(--white);
 }
 .overlay img {
 	width:8.75em;
