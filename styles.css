@@ -20,7 +20,6 @@ body {
 	background-position:top,center;
 	background-repeat:no-repeat;
 	background-color:var(--blue);
-	color:var(--white);
 	font-family:Arial,Helvetica,sans-serif;
 	font-family:'JetBrains Mono';
 	font-size:var(--font-size);
@@ -45,6 +44,8 @@ li {
 	min-width: 320px;
 	max-width: 1200px;
 	align-content: center;
+	color:var(--white);
+
 
 }
 /*select text*/
@@ -76,7 +77,7 @@ li {
 		flex-direction: row; 
 		flex-wrap: wrap; 
 		align-content: flex-start;
-		width:150px;
+		width:300px;
 		border-radius: var(--border-radius);
 		margin: 0px;
 		}
@@ -94,6 +95,13 @@ li {
 .flex-container > div{
 	border-radius: 5px;
 	padding: 8px;
+}
+@media screen and (max-width: 768px) {
+	.flex-container {
+		flex-direction: column;
+		width:350px;
+		border-radius: var(--border-radius);
+	}
 }
 /*latest games gallery*/
 
@@ -115,10 +123,10 @@ li {
  
 .releaseflex {
     display: flex;
-    align-items: flex-start; 
     flex-direction: column; 
     flex-wrap: nowrap; 
-	align-content: center;
+	align-items: center;
+	justify-content: center;
 	max-width: 200px;
 }
 @media screen and (max-width: 768px) {
@@ -165,7 +173,6 @@ li {
 	justify-content: center;
 	padding:10px;
 	background-color:var(--blue);
-	color:var(--white);
 	margin:auto;
 	border-radius:var(--border-radius);
 }
@@ -201,6 +208,7 @@ li {
 }
 .dropdown {
 	background-color:var(--blue);
+	color:var(--pink);
 	padding:1em 0;
 	position:absolute;
 	display:none;
@@ -216,9 +224,10 @@ li {
 }
 .dropdown li {
 	padding:0.5em 1em;
-	width:8em;
+	width: 180px;
 	text-align:center;
 	background-color:var(--blue);
+	color: var(--white);
 	
 }
 .dropdown li:hover {
@@ -306,6 +315,7 @@ input[type=checkbox] {
 	flex-wrap: nowrap;
 	width: 900px;
 	margin:auto;
+	color: var(--white);
   }
   @media screen and (max-width: 768px) {
 	.wrapper{
@@ -316,27 +326,24 @@ input[type=checkbox] {
 	}
 }
   .productcard {
-	max-width: 150px;
+	max-width: 224px;
 	text-align: center;
 	padding: 3px;
+	max-height: 324px;
   }
   .productcard img {
-	max-width: 150px;
+	max-width: 224px;
+	max-height: 324px;
 	border-radius: var(--border-radius);
-  }
   
-  .price {
-	color: var(--green);
-	font-size: 20px;
   }
-  
   .productcard button {
 	border: none;
 	padding: 5px;
 	color: var(--white);
 	background-color: var(--pink);
 	text-align: center;
-	width: 100%;
+	width: 100px;
 	font-size: 16px;
 	border-radius: var(--border-radius);
   }
@@ -349,6 +356,7 @@ input[type=checkbox] {
 	font-size: x-large;
 	padding: 5px;
 	text-align: center;
+	color: var(--white);
   }
 /* Buttons */
 .btn {
