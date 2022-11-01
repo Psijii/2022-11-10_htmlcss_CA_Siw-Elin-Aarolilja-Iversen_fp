@@ -150,6 +150,7 @@ li {
 	background-color:var(--blue);
 	margin:auto;
 	border-radius:var(--border-radius);
+	z-index: 1000;
 
 }
 .nav-links a {
@@ -166,6 +167,7 @@ li {
 	align-items: center;
 	gap:1em;
 	font-size:1.125rem;
+	z-index: 1000;
 
 }
 .menu li:hover {
