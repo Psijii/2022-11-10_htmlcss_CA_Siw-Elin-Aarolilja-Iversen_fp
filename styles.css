@@ -78,9 +78,10 @@ li {
 		flex-direction: row; 
 		flex-wrap: wrap; 
 		align-content: flex-start;
-		width:300px;
+		width:380px;
 		border-radius: var(--border-radius);
-		margin: 0px;
+    margin: 0px;
+    padding: 5px;
 		}
 	}
 /*flex box for index page*/
@@ -121,11 +122,10 @@ li {
 	transition: filter 1s ease-out 0.1ms;
 }
 
- 
 .releaseflex {
-    display: flex;
-    flex-direction: column; 
-    flex-wrap: nowrap; 
+  display: flex;
+  flex-direction: column; 
+  flex-wrap: nowrap; 
 	align-items: center;
 	justify-content: center;
 	max-width: 200px;
@@ -134,7 +134,8 @@ li {
 	.releaseflex{
 		flex-direction: column;
 		width:200px;
-		border-radius: var(--border-radius);
+    border-radius: var(--border-radius);
+    padding: 0.3125rem;
 	}
 }
 .gameinfo {
