@@ -45,21 +45,14 @@ li {
 	min-width: 320px;
 	max-width: 1200px;
 	align-content: center;
-	color:var(--white);
-
-
+  color:var(--white);
+  align-items: center;
 }
 /*select text*/
-::-moz-selection { /* Code for Firefox */
-	color: var(--pink);
-	background: var(--white);
-  }
-  
 ::selection {
-	color: var(--pink);
+	color: #E21CE0;
 	background: var(--white);
-  }
-
+}
 
 /* flex alignments for games */
 .flex-games {
@@ -70,8 +63,8 @@ li {
 	margin-top: -250px;
 	align-items:center;
 	flex-direction: row;
-	justify-content: center;
-	}
+  justify-content: center;
+}
 @media screen and (max-width: 768px) {
 	.flex-games{
 		display: flex;
@@ -179,7 +172,8 @@ li {
 	border-radius:var(--border-radius);
 }
 .nav-links a {
-	color: var(--white);
+  color: var(--white);
+  
 }
 .nav-links:hover {
 	color: var(--pink);
