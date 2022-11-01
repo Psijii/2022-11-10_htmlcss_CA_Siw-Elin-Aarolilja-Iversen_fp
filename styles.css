@@ -26,6 +26,7 @@ body {
 	overflow-x:hidden;
 	padding:0.9375rem;
 	color: var(--white);
+	z-index: 1000;
 }
 
 h1 {
