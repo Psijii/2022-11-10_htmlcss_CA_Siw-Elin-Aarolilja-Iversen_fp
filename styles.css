@@ -10,7 +10,7 @@
 /*chrome img rendering fix */
 img {
 	border: none;
-	transform: translateZ(1px);
+	transform: translateZ(0.0625rem);
 	}
 /*bg styles etc */
 body {
@@ -24,7 +24,7 @@ body {
 	font-family:'JetBrains Mono';
 	font-size:var(--font-size);
 	overflow-x:hidden;
-	padding:15px;
+	padding:0.9375rem;
 	color: var(--white);
 }
 
@@ -44,8 +44,8 @@ li {
 }
 .mywrapper {
 	margin: 0 auto;
-	min-width: 320px;
-	max-width: 1200px;
+	min-width: 20rem;
+	max-width: 75rem;
 	align-content: center;
   color:var(--white);
 	align-items: center;
@@ -62,9 +62,9 @@ li {
 .flex-games {
 	display: flex;
 	height: 100%;
-	padding: 10px;
-	gap: 5px;
-	margin-top: -250px;
+	padding: 0.625rem;
+	gap: 0.3125rem;
+	margin-top: -15.625rem;
 	align-items:center;
 	flex-direction: row;
   justify-content: center;
@@ -76,13 +76,13 @@ li {
 	justify-content: space-between; 
 	align-items: flex-start;
 	height: 100%;
-	padding: 10px;
-	gap: 5px;
+	padding: 0.625rem;
+	gap: 0.3125rem;
 }
 
 .flex-container > div{
-	border-radius: 5px;
-	padding: 8px;
+	border-radius: 0.3125rem;
+	padding: 0.5rem;
 }
 
 /*latest games gallery*/
@@ -108,7 +108,7 @@ li {
   flex-wrap: nowrap; 
 	align-items: center;
 	justify-content: center;
-	max-width: 200px;
+	max-width: 12.5rem;
 }
 
 .gameinfo {
@@ -119,7 +119,7 @@ li {
 	
 }
 .gameinfo img {
-	max-width: 200px;
+	max-width: 300px;
 	border-radius:var(--border-radius);
 }
 .gameprice {
@@ -129,7 +129,7 @@ li {
 }
 
 .latestrelease {
-	width:200px;
+	width:12.5rem;
 	text-align:center;
 	margin:auto;
 	border-radius:var(--border-radius);
@@ -137,7 +137,7 @@ li {
 }
 .latestrelease img {
 	margin:auto;
-	width: 200px;
+	width: 12.5rem;
 }
 
 /*styling the navbar/headermenu*/
@@ -146,7 +146,7 @@ li {
 	align-items:center;
 	flex-direction: row;
 	justify-content: center;
-	padding:10px;
+	padding:0.625rem;
 	background-color:var(--blue);
 	margin:auto;
 	border-radius:var(--border-radius);
@@ -165,27 +165,70 @@ li {
 	justify-content: center;
 	align-items: center;
 	gap:1em;
-	font-size:18px;
+	font-size:1.125rem;
 
 }
 .menu li:hover {
-	border-radius:5px;
+	border-radius:0.3125rem;
 
 	
 }
 .menu li {
-	padding: 5px 14px;
+	padding: 0.3125rem 0.875rem;
 }
 
-/*responsive menu */
+/*responsive menu haxx*/
 input[type=checkbox] {
 	display: none;
 }
 /*hamburger menu*/
 .hamburger {
 	display:none;
-	font-size:24px;
+	font-size:1.5rem;
 	user-select: none;
+	
+}
+/*game info grid alignments */
+.grid_info {
+		display: grid; 
+		grid-template-rows: 360px auto;
+		grid-template-columns: auto auto;
+		gap: 0.3125rem;	
+		margin:auto;
+		padding: 5px;
+		grid-template-areas:
+    'gameimg gameinfo'
+    'buy gameinfo';
+}
+ .grid_info h2 {
+	color: var(--white);
+	text-align: center;
+ }
+ 
+ .grid_gameimg img {
+	max-width: 17.5rem;
+	border-radius:var(--border-radius);
+ }
+ .grid_gameimg {
+	grid-row-start: 1;
+	grid-column-start: 1;
+	grid-area: gameimg;
+	max-height: 300px;
+	max-width: 300px;
+	
+}
+.grid_buy {
+	grid-row-start: 2;
+	grid-column-start: 1;
+	max-height: 300px;
+	max-width: 300px;
+	grid-area:buy;
+
+}
+.grid_gameinfo {
+	grid-row-start: 1;
+	grid-column-start: 2;
+	grid-area:gameinfo;
 	
 }
 
@@ -193,50 +236,54 @@ input[type=checkbox] {
 /* grid for game page */
 .card {
 	color:var(--white);
-	padding:2px;
+	padding:0.125rem;
 	height:auto;
 	border-radius:var(--border-radius);
 
 }
 .cards {
-	grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-	max-width:600px;
+	grid-template-columns:repeat(auto-fit,minmax(18.75rem,1fr));
+	max-width:37.5rem;
 	margin:0 auto;
 	display:grid;
-	gap:5px;
-	padding: 10px;
+	gap:0.3125rem;
+	padding: 0.625rem;
 }
+.cards img {
+	max-width: 300px;
+	border-radius:var(--border-radius);
 
+}
 /*PRODUCT CARDS */
 .wrapper {
 	display: flex;
-	padding: 10px;
+	padding: 0.625rem;
 	flex-wrap: nowrap;
-	width: 900px;
+	width: 56.25rem;
 	margin:auto;
 	color: var(--white);
   }
 
   .productcard {
-	max-width: 224px;
+	max-width: 14rem;
 	text-align: center;
-	padding: 3px;
-	max-height: 324px;
+	padding: 0.1875rem;
+	max-height: 20.25rem;
   }
   .productcard img {
-	max-width: 224px;
-	max-height: 324px;
+	max-width: 14rem;
+	max-height: 20.25rem;
 	border-radius: var(--border-radius);
   
   }
   .productcard button {
 	border: none;
-	padding: 5px;
+	padding: 0.3125rem;
 	color: var(--white);
 	background-color: var(--pink);
 	text-align: center;
-	width: 100px;
-	font-size: 16px;
+	width: 6.25rem;
+	font-size: 1rem;
 	border-radius: var(--border-radius);
   }
   
@@ -246,7 +293,7 @@ input[type=checkbox] {
   
   .category {
 	font-size: x-large;
-	padding: 5px;
+	padding: 0.3125rem;
 	text-align: center;
 	color: var(--white);
   }
@@ -259,7 +306,7 @@ input[type=checkbox] {
 	text-align:center;
 	display:inline-block;
 	font-size:large;
-	margin:4px;
+	margin:0.25rem;
 	border-radius:var(--border-radius);
 	font-family:Arial,Helvetica,sans-serif;
 	font-family:'JetBrains Mono';
@@ -272,30 +319,30 @@ input[type=checkbox] {
 .btncart {
 	background-color:var(--pink);
 	color:var(--white);
-	padding:5px;
+	padding:0.3125rem;
 	text-align:center;
 	border-radius:var(--border-radius);
 	border:none;
-	margin: 10px;
+	margin: 0.625rem;
 	font-family:Arial,Helvetica,sans-serif;
 	font-family:'JetBrains Mono';
 }
 .btncart:hover {
 	background-color:var(--white);
 	color:var(--pink);
-	padding:5px;
+	padding:0.3125rem;
 	text-align:center;
 	display:inline-block;
 	border-radius:var(--border-radius);
 	border:none;
-	margin: 10px;
+	margin: 0.625rem;
 	font-family:Arial,Helvetica,sans-serif;
 	font-family:'JetBrains Mono';
 }
 .btnprice {
 	background-color: var(--green);
 	color: var(--white);
-	padding: 5px;
+	padding: 0.3125rem;
 	text-align: center;
 	border-radius: var(--border-radius);
 	border:none;
@@ -305,7 +352,7 @@ input[type=checkbox] {
 .btnprice:hover {
 	color: var(--green);
 	background-color: var(--white);
-	padding: 5px;
+	padding: 0.3125rem;
 	text-align: center;
 	border-radius: var(--border-radius);
 	border:none;
@@ -316,18 +363,18 @@ input[type=checkbox] {
 .btnused {
 	color: var(--blue);
 	background-color: var(--white);
-	padding: 5px;
+	padding: 0.3125rem;
 	text-align: center;
 	border-radius: var(--border-radius);
 	border:none;
-	margin: 5px;
+	margin: 0.3125rem;
 	font-family:Arial,Helvetica,sans-serif;
 	font-family:'JetBrains Mono';
 }
 .btnused:hover {
 	background-color: var(--white);
 	color: var(--pink);
-	padding: 5px;
+	padding: 0.3125rem;
 	text-align: center;
 	border-radius: var(--border-radius);
 	border:none;
@@ -383,11 +430,11 @@ input[type=checkbox] {
 .games {
 	display: flex;
 	flex-flow: space-between;
-	max-width: 200px;
+	max-width: 12.5rem;
 	border-radius: var(--border-radius);	
 }
 .games img {
-	max-width: 250px;
+	max-width: 15.625rem;
 	border-radius: var(--border-radius);	
  }	
 
@@ -396,10 +443,10 @@ input[type=checkbox] {
 
 /* gamehub logo */
 .logo {
-	font-size:32px;
+	font-size:2rem;
 }
 .logo img {
-	width: 130px;
+	width: 8.125rem;
 }
 
 /* login-form, dummy version */
@@ -409,16 +456,16 @@ form {
 }   
 input[type=text], input[type=password] {   
 		width: 100%;
-		padding: 12px;
+		padding: 0.75rem;
 		border-style: none;
-		border-radius: 4px;
+		border-radius: 0.25rem;
 		box-sizing: border-box;
-		margin-top: 6px;
-		margin-bottom: 16px;
+		margin-top: 0.375rem;
+		margin-bottom: 1rem;
 		resize: vertical;
 		background: #EAB1E9;
-		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-		border-radius: 5px;
+		box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+		border-radius: 0.3125rem;
  
 }   
 .btnlogin {
@@ -428,7 +475,7 @@ input[type=text], input[type=password] {
    padding:0.625rem;
    text-align:center;
    display:inline-block;
-   margin:4px;
+   margin:0.25rem;
    border-radius:var(--border-radius);
    width: 100%;
    font-family:Arial,Helvetica,sans-serif;
@@ -447,7 +494,7 @@ input[type=text], input[type=password] {
    padding:0.625rem;
    text-align:center;
    display:inline-block;
-   margin:4px;
+   margin:0.25rem;
    border-radius:var(--border-radius);
    font-family:Arial,Helvetica,sans-serif;
 	font-family:'JetBrains Mono';
@@ -458,8 +505,8 @@ input[type=text], input[type=password] {
 }
 
 .container {   
-	padding: 25px;   
-	max-width: 350px;
+	padding: 1.5625rem;   
+	max-width: 21.875rem;
 	margin: auto;
 	border-radius: var(--border-radius);
 	background-color: var(--white);
@@ -469,32 +516,32 @@ input[type=text], input[type=password] {
 /*contact form*/
 input[type=text], select, textarea {
 	width: 100%;
-	padding: 12px;
+	padding: 0.75rem;
 	border-style: none;
-	border-radius: 4px;
+	border-radius: 0.25rem;
 	box-sizing: border-box;
-	margin-top: 6px;
-	margin-bottom: 16px;
+	margin-top: 0.375rem;
+	margin-bottom: 1rem;
 	resize: vertical;
 	background: #EAB1E9;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	border-radius: 5px;
+	box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+	border-radius: 0.3125rem;
 	color:var(--blue);
   }
   label {
-	  font-size: 16px;
+	  font-size: 1rem;
 	  color: var(--blue);
 	  
   }
   input[type=submit] {
 	background-color: #EAB1E9;
 	color: var(--blue);
-	padding: 12px 20px;
+	padding: 0.75rem 1.25rem;
 	border: none;
 	border-radius: var(--border-radius);
 	cursor: pointer;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	border-radius: 5px;
+	box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+	border-radius: 0.3125rem;
 	font-family:Arial,Helvetica,sans-serif;
 	font-family:'JetBrains Mono';
 	color:var(--blue);
@@ -505,11 +552,11 @@ input[type=text], select, textarea {
   }
   
   .contactctn {
-	border-radius: 5px;
+	border-radius: 0.3125rem;
 	background: var(--white);
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	border-radius: 5px;
-	padding: 20px;
+	box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+	border-radius: 0.3125rem;
+	padding: 1.25rem;
 	}
 	
 /*shopping cart*/
@@ -517,23 +564,23 @@ input[type=text], select, textarea {
 .shopwrapper {
 	display: flex;
 	flex-wrap: nowrap;
-	width: 950px;
+	width: 59.375rem;
 	margin: 0 auto;
-	min-width: 320px;
+	min-width: 20rem;
 	align-content: center;
   color:var(--white);
 	align-items: center;
 }
 .shopping-cart {
-  width: 650px;
-  height: 600px;
+  width: 40.625rem;
+  height: 37.5rem;
 	margin: auto;
 	color: var(--pink);
   background: var(--white);
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   display: flex;
 	flex-direction: column;
-	padding: 5px;
+	padding: 0.3125rem;
 	
 }
 .title {
@@ -541,7 +588,7 @@ input[type=text], select, textarea {
   border-bottom: 0rem;
   padding: 1.25rem 1.875rem;
   color: black;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 .item {
   padding: 1.25rem 1.875rem;
@@ -649,7 +696,6 @@ outline:0;
 }
 
 
-
 /*footer styles*/
 .footer {
 	background:rgba(234,177,233,0.36);
@@ -661,7 +707,7 @@ outline:0;
 	margin:auto;
 	justify-content:center;
 	border-radius:var(--border-radius);
-	margin-top: 20px;
+	margin-top: 1.25rem;
 }
 .footerlogo img {
 	width:5.375em;
@@ -671,50 +717,58 @@ outline:0;
 }
 
 /*Media queries*/
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
+  .grid_info {
+    grid-template-areas:
+      'gameimg'
+      'buy'
+      'gameinfo';
+  }
+}
+@media screen and (max-width: 48rem) {
 	.flex-games{
 		display: flex;
 		flex-direction: row; 
 		flex-wrap: wrap; 
 		align-content: flex-start;
-		width:380px;
+		width:23.75rem;
 		border-radius: var(--border-radius);
-    margin: 0px;
-    padding: 5px;
+    margin: 0rem;
+    padding: 0.3125rem;
 		}
 	}
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
 	.flex-container {
 		flex-direction: column;
-		width:350px;
+		width:21.875rem;
 		border-radius: var(--border-radius);
 	}
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
 	.releaseflex{
 		flex-direction: column;
-		width:200px;
+		width:12.5rem;
     border-radius: var(--border-radius);
     padding: 0.3125rem;
 	}
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
 	.games{
 		flex-direction: column;
-		width:150px;
+		width:9.375rem;
 		border-radius: var(--border-radius);
 	}
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
 	.wrapper{
 		flex-direction: column;
-		width:400px;
+		width:25rem;
 		border-radius: var(--border-radius);
-		padding: 3px;
+		padding: 0.1875rem;
 		margin:auto;
 	}
 }
-@media(max-width: 768px) {
+@media(max-width: 48rem) {
 	.checkout {
 	flex-direction: column;
 	width: 100%;
@@ -722,7 +776,7 @@ outline:0;
 	overflow: hidden;
 	}
 }
-@media(max-width: 768px) {
+@media(max-width: 48rem) {
 	.shopwrapper {
 	flex-direction: column;
 	width: 100%;
@@ -730,7 +784,7 @@ outline:0;
 	overflow: hidden;
 	}
 }
-@media(max-width: 768px) {
+@media(max-width: 48rem) {
 	.subtotal {
 	flex-direction: column;
 	width: 100%;
@@ -738,7 +792,7 @@ outline:0;
 	overflow: hidden;
 	}
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .shopping-cart {
     width: 100%;
     height: auto;
@@ -761,12 +815,12 @@ outline:0;
 		margin: auto;
   }
   .buttons {
-    margin-right: 20px;
+    margin-right: 1.25rem;
   }
 }
 
 /*media queries for responsive desgined navbar */
-@media (max-width:768px) {
+@media (max-width:48rem) {
 	.menu {
 		display:none;
 		position:absolute;
