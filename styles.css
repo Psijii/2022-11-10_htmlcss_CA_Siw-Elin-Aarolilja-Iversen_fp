@@ -636,7 +636,12 @@ input[type=text], select, textarea {
 
 /*Media queries*/
 @media 
-screen and (max-width: 480px), (max-width: 810px) {
+screen and 
+(max-width:320px), 
+(max-width:481px),  
+(max-width:641px),   
+(max-width:961px),  
+(max-width:1025px) {
 
 .flex-games {
 		display: flex;
