@@ -1,7 +1,7 @@
 /* root styles*/
 :root {
 	--blue:#0F1359;
-	--pink:#CC79CB;
+	--pink:#853185;
 	--white:#F2F2F2;
 	--green:#46A637;
 	--font-size:1em;
@@ -299,9 +299,7 @@ input[type=checkbox] {
 
 
 /* games, content, and headlines */
-.date {
-	color:var(--pink);
-}
+
 .games {
 	display: flex;
 	flex-flow: space-between;
