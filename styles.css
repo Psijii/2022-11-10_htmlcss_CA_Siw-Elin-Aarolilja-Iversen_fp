@@ -164,7 +164,7 @@ p {
   
 }
 .nav-links a:hover {
-	color: var(--pink);
+	color: #E21CE0;
 }
 .menu {
 	display:flex;
@@ -508,15 +508,14 @@ input[type=text], select, textarea {
 	text-indent: 0.3125rem;
 }
 
-.totalcost {
-	text-align: center;
-}
+
 
 .subtotal,
 .checkout,
 .totalcost, 
 	h2 h3 h4 span {
 	color: var(--blue);
+	text-align: center;
 	
 	}
 /*ALL the buttons styles */
