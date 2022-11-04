@@ -60,8 +60,12 @@ input {
 	border-radius: 5px;
 }
 
-div {
+.subtotal,
+.shopping-cart,
+.checkout,
+.contactctn {
 	padding: 5px;
+	border-radius: 5px;
 }
 
 .mywrapper {
@@ -162,8 +166,6 @@ div {
 	width: 200px;
 	text-align: center;
 	margin: auto;
-	
-
 }
 
 .latestrelease img {
@@ -240,8 +242,7 @@ input[type=checkbox] {
 }
 
 .grid_gameimg img {
-	max-width: 280px;
-	
+	max-width: 280px;	
 }
 
 .grid_gameimg {
@@ -250,7 +251,9 @@ input[type=checkbox] {
 	grid-area: gameimg;
 	max-height: 300px;
 	max-width: 300px;
-
+}
+.grid_gameimg img {
+	max-width: 280px;	
 }
 
 .grid_buy {
