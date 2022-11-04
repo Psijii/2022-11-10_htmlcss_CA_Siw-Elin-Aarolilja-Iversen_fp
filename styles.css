@@ -64,18 +64,7 @@ input {
 .shopping-cart,
 .checkout,
 .contactctn {
-	padding: 5px;
 	border-radius: 5px;
-}
-
-.mywrapper {
-	margin: 0 auto;
-	min-width: 320px;
-	max-width: 1200px;
-	align-content: center;
-	color: var(--white);
-	align-items: center;
-
 }
 
 /*select text*/
@@ -113,7 +102,7 @@ input {
 	align-items: flex-start;
 	height: 100%;
 	padding: 10px;
-	gap: 5px;
+	gap: 10px;
 }
 
 /*latest games gallery*/
@@ -242,7 +231,8 @@ input[type=checkbox] {
 }
 
 .grid_gameimg img {
-	max-width: 280px;	
+	max-width: 280px;
+	
 }
 
 .grid_gameimg {
@@ -251,9 +241,7 @@ input[type=checkbox] {
 	grid-area: gameimg;
 	max-height: 300px;
 	max-width: 300px;
-}
-.grid_gameimg img {
-	max-width: 280px;	
+
 }
 
 .grid_buy {
@@ -294,9 +282,9 @@ input[type=checkbox] {
 }
 
 .price_input {
-display:flex;
-flex-direction: row;
-gap: 5px;
+	display:flex;
+	flex-direction: row;
+	gap: 5px;
 }
 
 .category {
@@ -343,33 +331,29 @@ textarea {
 	padding: 12px;
 	border-style:solid;
 	border-color: rgba(234, 177, 233, 0.36);
-	
 	box-sizing: border-box;
 	margin-top: 6px;
 	margin-bottom: 16px;
 	resize: vertical;
 	
 }
-
-
 .container {
 	padding: 25px;
 	max-width: 350px;
 	margin: auto;
-	
+	border-radius: 5px;
 	background-color: var(--white);
 	color: var(--blue);
 }
 
-.container>p {
+.container > p {
 	color: var(--blue);
 }
 
 /*contact form */
 
-
 .contactctn {
-	
+	border-radius: 5px;
 	background: var(--white);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	padding: 20px;
@@ -397,7 +381,6 @@ textarea {
 	margin: auto;
 	color: var(--pink);
 	background: var(--white);
-	
 	display: flex;
 	flex-direction: column;
 	padding: 5px;
