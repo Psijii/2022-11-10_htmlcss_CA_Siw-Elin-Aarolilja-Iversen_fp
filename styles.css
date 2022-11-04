@@ -11,7 +11,7 @@
 /*chrome img rendering fix */
 img {
 	border: none;
-	transform: translateZ(0.0625rem);
+	transform: translateZ(1);
 }
 
 /*bg styles etc */
@@ -23,12 +23,12 @@ body {
 	background-repeat: no-repeat;
 	background-color: var(--blue);
 	font-family: Arial, Helvetica, sans-serif;
-	font-family: 'JetBrains Mono';
 	font-size: var(--font-size);
 	overflow-x: hidden;
-	padding: 0.9375rem;
+	padding: 15px;
 	color: var(--white);
 	z-index: 1;
+	font-size: 18px;
 }
 
 h1 {
@@ -56,7 +56,7 @@ p {
 .mywrapper {
 	margin: 0 auto;
 	min-width: 320px;
-	max-width: 75rem;
+	max-width: 1200px;
 	align-content: center;
 	color: var(--white);
 	align-items: center;
@@ -104,8 +104,8 @@ p {
 }
 
 .overlay img {
-	width: 8.75em;
-	height: 9.125em;
+	width: 140px;
+	height: 146px;
 	object-fit: cover;
 	border-radius: var(--border-radius);
 	filter: brightness(50%);
@@ -122,7 +122,7 @@ p {
 	flex-wrap: nowrap;
 	align-items: center;
 	justify-content: center;
-	max-width: 12.5rem;
+	max-width: 200px;
 }
 
 .gameinfo {
@@ -145,7 +145,7 @@ p {
 }
 
 .latestrelease {
-	width: 12.5rem;
+	width: 200px;
 	text-align: center;
 	margin: auto;
 	border-radius: var(--border-radius);
@@ -154,7 +154,7 @@ p {
 
 .latestrelease img {
 	margin: auto;
-	width: 12.5rem;
+	width: 200px;
 }
 
 /*styling the navbar/headermenu*/
@@ -188,13 +188,10 @@ p {
 	gap: 1em;
 	font-size: 18px;
 	z-index: 1;
-
 }
 
 .menu li:hover {
 	border-radius: 5px;
-
-
 }
 
 .menu li {
@@ -209,7 +206,7 @@ input[type=checkbox] {
 /*hamburger menu*/
 .hamburger {
 	display: none;
-	font-size: 1.5rem;
+	font-size: 24px;
 	user-select: none;
 
 }
@@ -263,55 +260,31 @@ input[type=checkbox] {
 
 }
 
-
-/* grid for game page */
-.card {
-	color: var(--white);
-	padding: 0.125rem;
-	height: auto;
-	border-radius: var(--border-radius);
-
-}
-
-.cards {
-	grid-template-columns: repeat(auto-fit, minmax(1140px, 1fr));
-	max-width: 600px;
-	margin: 0 auto;
-	display: grid;
-	gap: 5px;
-	padding: 10px;
-}
-
-.cards img {
-	max-width: 300px;
-	border-radius: var(--border-radius);
-
-}
-
-/*PRODUCT CARDS */
-.wrapper {
+/* games.html flexboxes*/
+.product-section {
 	display: flex;
-	padding: 10px;
-	flex-wrap: nowrap;
-	width: 56.25rem;
+	justify-content: center;
 	margin: auto;
-	color: var(--white);
+	flex-wrap: wrap;
+	gap:5px;
+	row-gap: 10px;
 }
 
-.productcard {
-	max-width: 224px;
-	text-align: center;
-	padding: 3px;
-	max-height: 324px;
+.product-card {
+	width: min(100%, 180px);
+	margin: 40px;
+}
+.product-card img {
+	margin-top: 10px;
+	max-width: 240px;
+	border-radius: 5px;
 }
 
-.productcard img {
-	max-width: 224px;
-	max-height: 324px;
-	border-radius: var(--border-radius);
-
+.priceinput {
+display:flex;
+flex-direction: row;
+gap: 5px;
 }
-
 
 .category {
 	font-size: x-large;
@@ -320,8 +293,59 @@ input[type=checkbox] {
 	color: var(--white);
 }
 
-/*released content styles */
+/*games.html content */
+.some-page-wrapper {
+  margin: 15px;
+  background-color: red;
+}
 
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+
+.orange-column {
+  background-color: orange;
+  height: 100px;
+}
+
+.blue-column {
+  height: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.green-column {
+  background-color: green;
+  height: 100px;
+}
+
+.double-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+	border-style: solid;
+	border-color: lime;
+	border-width: 3px;
+}
+
+@media screen and (min-width: 800px) {
+  .column {
+    flex: 1
+  }
+
+  .double-column {
+    flex: 2
+  }
+}
 
 
 /* games, content, and headlines */
@@ -337,8 +361,6 @@ input[type=checkbox] {
 	max-width: 250px;
 	border-radius: var(--border-radius);
 }
-
-
 
 
 /* gamehub logo */
@@ -525,7 +547,7 @@ input[type=submit]:hover {
 
 .total-price {
 	width: 83px;
-	padding-top: 1.6875rem;
+	padding-top: 27px;
 	text-align: center;
 	font-size: 16px;
 	color: black;
@@ -546,13 +568,11 @@ input[type=submit]:hover {
 
 .checkout {
 	width: 298px;
-	height: 5rem;
+	height: 80px;
 	background-color: #b1b1b1;
 	border-radius: var(--border-radius);
 	text-indent: 5px;
 }
-
-
 
 .subtotal,
 .checkout,
@@ -576,6 +596,7 @@ h2 h3 h4 span {
 	font-family: 'JetBrains Mono';
 	margin: 10px;
 	padding: 5px;
+	border: none;
 }
 
 #releasebtn {
@@ -604,7 +625,7 @@ h2 h3 h4 span {
 
 #price-btn {
 	background-color: var(--green);
-	color: var(--white);
+	color: #d8eed5;
 	margin: 0px;
 }
 
@@ -661,17 +682,17 @@ h2 h3 h4 span {
 	height: 30px;
 	background-color: var(--white);
 	border-radius: 6px;
-	border: none;
+	
 
 }
 
 #plus-btn {
-	margin-top: 0.125rem;
+	margin-top: 2px;
 	width: 30px;
 	height: 30px;
 	background-color: var(--white);
 	border-radius: 6px;
-	border: none;
+
 
 }
 
@@ -680,7 +701,7 @@ h2 h3 h4 span {
 	background: rgba(234, 177, 233, 0.36);
 	display: flex;
 	width: 100%;
-	height: 5em;
+	height: 80px;
 	color: var(--white);
 	text-align: center;
 	margin: auto;
@@ -690,8 +711,8 @@ h2 h3 h4 span {
 }
 
 .footerlogo img {
-	width: 5.375em;
-	padding: 1em;
+	width: 86px;
+	padding: 16px;
 	vertical-align: middle;
 	margin: auto;
 }
@@ -703,22 +724,21 @@ h2 h3 h4 span {
 (max-width:961px),
 (max-width:1025px) {
 
-	.flex-games {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		align-content: flex-start;
-		width: 100%;
-		border-radius: var(--border-radius);
-		margin: 0rem;
-		padding: 5px;
-	}
-
-	.grid_info {
-		grid-template-areas:
-			'gameimg'
-			'buy'
-			'gameinfo';
+.flex-games {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	width: 100%;
+	border-radius: var(--border-radius);
+	margin: 0px;
+	padding: 5px;
+}
+.grid_info {
+	grid-template-areas:
+		'gameimg'
+		'buy'
+		'gameinfo';
 	}
 
 	.flex-container {
@@ -744,7 +764,7 @@ h2 h3 h4 span {
 		flex-direction: column;
 		width: 100%;
 		border-radius: var(--border-radius);
-		padding: 0.1875rem;
+		padding: 3px;
 		margin: auto;
 	}
 
@@ -780,19 +800,7 @@ h2 h3 h4 span {
 		flex-wrap: wrap;
 		justify-content: center;
 	}
-
-	.productimage img {
-		height: 100%;
-		margin: auto;
-	}
-
-	.productimage,
-	.quantity,
-	.description {
-		width: 100%;
-		text-align: center;
-		margin: auto;
-	}
+	
 
 	.buttons {
 		margin-right: 20px;
@@ -800,14 +808,14 @@ h2 h3 h4 span {
 
 	.menu {
 		display: none;
-		position: absolute;
+		position: absolute, top;
 		background-color: var(--blue);
 		color: var(--white);
 		right: 0;
 		left: 0;
 		text-align: center;
 		padding: 16px 0;
-		overflow: show;
+		overflow: hidden;
 		font-size: 100%;
 	}
 
@@ -830,6 +838,19 @@ h2 h3 h4 span {
 	.hamburger {
 		display: inline;
 		color: var(--white);
+	
+    }
+	
+.game-card{
+width: min(100%, 100px);
+}
 
+.game-section{
+	gap:10px;
+}
+.game-card{
+	width: min(100%, 190px);
+			
+			
 	}
 }
