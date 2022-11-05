@@ -50,7 +50,6 @@ p {
 	color: var(--white)
 }
 
-
 img,
 button,
 input {
@@ -229,7 +228,6 @@ input[type=checkbox] {
 
 .grid_gameimg img {
 	max-width: 280px;
-	
 }
 
 .grid_gameimg {
@@ -238,7 +236,6 @@ input[type=checkbox] {
 	grid-area: gameimg;
 	max-height: 300px;
 	max-width: 300px;
-
 }
 
 .grid_buy {
@@ -248,14 +245,12 @@ input[type=checkbox] {
 	max-width: 300px;
 	text-align: center;
 	grid-area: buy;
-
 }
 
 .grid_gameinfo {
 	grid-row-start: 1;
 	grid-column-start: 2;
 	grid-area: gameinfo;
-
 }
 
 /* games.html flexboxes*/
@@ -275,7 +270,6 @@ input[type=checkbox] {
 .product_card img {
 	margin-top: 10px;
 	max-width: 240px;
-	
 }
 
 .price_input {
@@ -291,8 +285,6 @@ input[type=checkbox] {
 	color: var(--white);
 }
 
-
-
 /* games, content, and headlines */
 
 .games {
@@ -304,15 +296,10 @@ input[type=checkbox] {
 
 .games img {
 	max-width: 250px;
-	
 }
-
 
 /* gamehub logo */
 
-.logo img {
-	width: 130px;
-}
 
 /* login-form, dummy version */
 
@@ -490,7 +477,6 @@ h2 h3 h4 span {
 	text-align: center;
 	font-size: large;
 	display: inline-block;
-	
 	font-family: Arial, Helvetica, sans-serif;
 	font-family: 'JetBrains Mono';
 	margin: 10px;
@@ -584,7 +570,6 @@ h2 h3 h4 span {
 	text-align: center;
 	margin: auto;
 	justify-content: center;
-	
 	margin-top: 20px;
 }
 
@@ -594,6 +579,10 @@ h2 h3 h4 span {
 	vertical-align: middle;
 	margin: auto;
 }
+.logo img {
+	width: 130px;
+}
+
 
 /*Media queries*/
 @media screen and (max-width:320px),
@@ -608,7 +597,6 @@ h2 h3 h4 span {
 	flex-wrap: wrap;
 	align-content: flex-start;
 	width: 100%;
-	
 	margin: 0px;
 	padding: 5px;
 }
@@ -628,7 +616,6 @@ h2 h3 h4 span {
 	.releaseflex {
 		flex-direction: column;
 		width: 100%;
-		
 		padding: 5px;
 	}
 
@@ -641,7 +628,6 @@ h2 h3 h4 span {
 	.wrapper {
 		flex-direction: column;
 		width: 100%;
-		
 		padding: 3px;
 		margin: auto;
 	}
@@ -680,26 +666,26 @@ h2 h3 h4 span {
 	}
 
 	
-.menu { 
-	display:none;
-	position: absolute;
-	background-color:var(--blue);
-	right: 0;
-	left: 0;
-	text-align: center;
-	padding: 16px 0;
-	color:var(--white);
-}
+	.menu { 
+		display:none;
+		position: absolute;
+		background-color:var(--blue);
+		right: 0;
+		left: 0;
+		text-align: center;
+		padding: 16px 0;
+		color:var(--white);
+	}
 
 .menu li + li {
-	margin-top: 12px;
-	color: var(--white);
-}
+		margin-top: 12px;
+		color: var(--white);
+	}
 input[type=checkbox]:checked ~ .menu{
-	display: block;
-}
+		display: block;
+	}
 .hamburger {
-display: block;
-color: var(--white);
-}
+	display: block;
+	color: var(--white);
+	}
 }
