@@ -585,7 +585,8 @@ h2 h3 h4 span {
 
 
 /*Media queries*/
-@media screen and (max-width:320px),
+@media screen and 
+(max-width:320px),
 (max-width:481px),
 (max-width:641px),
 (max-width:961px),
@@ -677,15 +678,15 @@ h2 h3 h4 span {
 		color:var(--white);
 	}
 
-.menu li + li {
+	.menu li + li {
 		margin-top: 12px;
 		color: var(--white);
 	}
-input[type=checkbox]:checked ~ .menu{
+	input[type=checkbox]:checked ~ .menu{
 		display: block;
 	}
-.hamburger {
-	display: block;
-	color: var(--white);
+	.hamburger {
+		display: block;
+		color: var(--white);
 	}
 }
