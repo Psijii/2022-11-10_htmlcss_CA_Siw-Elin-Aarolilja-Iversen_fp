@@ -106,11 +106,11 @@ input {
 /*flex box for index page*/
 .flex-container {
 	display: flex;
-	justify-content: space-between;
 	align-items: flex-start;
 	height: 100%;
 	padding: 0.625rem;
 	gap: 0.625rem;
+	max-width: 900px;
 }
 
 /*latest games gallery*/
