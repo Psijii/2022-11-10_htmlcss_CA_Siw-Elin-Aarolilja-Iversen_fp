@@ -345,14 +345,31 @@ textarea {
 .contactctn p {
 	color: var(--blue);
 }
+/* checkout */
+
+.buy {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	width: 800px;
+	height: 100%;
+	background-color: var(--white);
+	margin: 0 auto;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.buy label, h3 {
+	color: var(--blue);
+}
 
 /*shopping cart*/
 
 .shopwrapper {
 	display: flex;
 	flex-wrap: nowrap;
-	width: 960px;
-	margin: 0 auto;
+	width: 990px;
+	margin: auto;
 	min-width: 320px;
 	align-content: center;
 	color: var(--white);
@@ -360,9 +377,8 @@ textarea {
 }
 
 .shopping-cart {
-	width: 660px;
+	width: 670px;
 	height: 600px;
-	margin: auto;
 	color: var(--pink);
 	background: var(--white);
 	display: flex;
@@ -438,14 +454,13 @@ textarea {
 	width: 83px;
 	padding-top: 27px;
 	text-align: center;
-	font-size: 16px;
+	font-size: 20px;
 	color: black;
 }
 
 .subtotal {
-	width: 1140px;
+	width: 300px;
 	height: 600px;
-	margin: auto;
 	background: #cecece;
 	display: flex;
 	flex-direction: column;
@@ -454,7 +469,7 @@ textarea {
 	padding: 5px;
 }
 
-.checkout {
+.shipping {
 	width: 298px;
 	height: 80px;
 	background-color: #b1b1b1;
@@ -462,7 +477,7 @@ textarea {
 }
 
 .subtotal,
-.checkout,
+.shipping,
 .totalcost,
 h2 h3 h4 span {
 	color: var(--blue);
@@ -560,6 +575,8 @@ h2 h3 h4 span {
 	background-color: var(--white);
 }
 
+
+
 /*footer styles*/
 .footer {
 	background: rgba(234, 177, 233, 0.36);
@@ -571,6 +588,7 @@ h2 h3 h4 span {
 	margin: auto;
 	justify-content: center;
 	margin-top: 20px;
+	border-radius: 5px;
 }
 
 .footerlogo img {
@@ -591,6 +609,11 @@ h2 h3 h4 span {
 (max-width:641px),
 (max-width:961px),
 (max-width:1025px) {
+
+.buy {
+	width: 100%;
+	height: 100%;
+}
 
 .flex-games {
 	display: flex;
@@ -665,8 +688,6 @@ h2 h3 h4 span {
 		flex-wrap: wrap;
 		justify-content: center;
 	}
-
-	
 	.menu { 
 		display:none;
 		position: absolute;

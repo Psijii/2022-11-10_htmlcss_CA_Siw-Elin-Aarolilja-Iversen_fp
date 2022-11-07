@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<script src="https://kit.fontawesome.com/03e5613b4c.js" crossorigin="anonymous"></script>
+		<link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+</head>
+<body>
+<header>
+<nav class="navbar">
+<!--gamehub logo and link-->
+<div class="logo">
+	<a href="index.html">
+		<img class="logo" src="images/ghlogo.svg" alt="GameHub Logo"></a>
+</div>
+<!--navigation menu starts here-->
+<ul class="nav-links">
+	<!--haxxign the checkbox-->
+	<input type="checkbox" id="checkbox_toggle"/>
+	<label for="checkbox_toggle" class="hamburger">&#9776;</label>
+	<!--actualy navigation menus-->
+	<div class="menu">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="games.html">Our games</a>
+		<li><a href="buysell.html">Buy & Sell</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="cart.html">Shopping cart</a></li>
+	</div>
+</ul>
+</nav>
+</header>
+<h1>Checkout and payment</h1>
+<div class="buy">
+  <h3>Billing address</h3>
+  <label> Full name</label>
+  <input type="text" placeholder="Your name">
+  <label> E-mail</label>
+  <input type="text" placeholder="your@mail.com">
+  <label> Address</label>
+  <input type="text" placeholder="Your billing and shipping address">
+  <label> City</label>
+  <input type="text" placeholder="Your city">
+  <label for="zip">Zip</label>
+  <input type="text" placeholder="Your zip code">
+  <label for="state">Country</label>
+  <input type="text" placeholder="Your country">
+
+  <h3>We accept all major credit cards </h3>
+
+  <label for="cname">Name on card</label>
+  <input type="text"  placeholder="CC holder's name">
+  <label for="ccnum">Credit card number</label>
+  <input type="text"  placeholder="1111-3333-3333-7777">
+  <label for="expmonth">Expiry month</label>
+  <input type="text"  placeholder="August">
+  <label for="expyear">Expiry year</label>
+  <input type="text"  placeholder="2022">
+  <label for="cvv">CVV</label>
+  <input type="text"  placeholder="Numbers back of card">
+<input type="button" id="price-btn" class="allbuttons" value="Purchase">
+<a href="cart.html"><input type="button" id="btn-cart" class="allbuttons" value="Back to cart"></a>
+
+</div> 
+ 
+
+<div class="footer">
+	<div class="footerlogo">
+		<a href="index.html">
+			<img src="images/ghlogo.svg" alt="GameHub Logo"></a>
+			<a href="about.html"><input type="button" id="btn-used" class="allbuttons" value="About us" />
+		<p>Noroff FED CA autumn 2022 Siw Elin Årolilja Iversen
+		</p>
+	</div>
+</div>
+
+</body>
+</html>
