@@ -98,12 +98,11 @@ input {
 	gap: 0.3125rem;
 	margin-top: -15.625rem;
 	align-items: center;
-	flex-direction: row;
 	justify-content: center;
 }
 
 /*flex box for index page*/
-.flex-container {
+.flex-index {
 	display: flex;
 	align-items: flex-start;
 	height: 100%;
@@ -144,17 +143,14 @@ input {
 	flex-direction: column;
 	align-items: flex-start;
 	margin: auto;
-
 }
 
 .gameinfo img {
 	max-width: 18.75rem;
-	
 }
 
 .gameprice {
 	display: flex;
-	flex-direction: row;
 	align-items: center;
 }
 
@@ -173,18 +169,15 @@ input {
 .navbar {
 	display: flex;
 	align-items: center;
-	flex-direction: row;
 	justify-content: center;
 	padding: 0.625rem;
 	background-color: var(--blue);
 	margin: auto;
 	z-index: 1;
-
 }
 
 .nav-links a {
 	color: var(--white);
-
 }
 
 .nav-links a:hover {
@@ -193,7 +186,6 @@ input {
 
 .menu {
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	gap: 1em;
@@ -216,7 +208,6 @@ input[type=checkbox] {
 	display: none;
 	font-size: 1.5rem;
 	user-select: none;
-
 }
 
 /*game info grid alignments */
@@ -285,7 +276,6 @@ input[type=checkbox] {
 
 .price_input {
 	display:flex;
-	flex-direction: row;
 	gap: 0.3125rem;
 }
 
@@ -302,7 +292,6 @@ input[type=checkbox] {
 	display: flex;
 	flex-flow: space-between;
 	max-width: 12.5rem;
-	
 }
 
 .games img {
@@ -314,6 +303,7 @@ input[type=checkbox] {
 form {
 	border: none;
 }
+
 input[type=text],
 input[type=password],
 select,
@@ -326,7 +316,6 @@ textarea {
 	margin-top: 0.375rem;
 	margin-bottom: 1rem;
 	resize: vertical;
-	
 }
 .container {
 	padding: 1.5625rem;
@@ -341,7 +330,6 @@ textarea {
 }
 
 /*contact form */
-
 .contactctn {
 	background: var(--white);
 	box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
@@ -350,8 +338,8 @@ textarea {
 .contactctn p {
 	color: var(--blue);
 }
-/* checkout */
 
+/* checkout */
 .buy {
 	display: flex;
 	flex-wrap: nowrap;
@@ -368,9 +356,9 @@ textarea {
 .buy label, h3 {
 	color: var(--blue);
 }
+
 .buy_complete {
 	display: flex;
-	flex-direction: row;
 	width: 50rem;
 	height: 100%;
 	margin: 0 auto;
@@ -382,7 +370,6 @@ textarea {
 }
 
 /*shopping cart*/
-
 .shopwrapper {
 	display: flex;
 	flex-wrap: nowrap;
@@ -405,7 +392,6 @@ textarea {
 	display: flex;
 	flex-direction: column;
 	padding: 0.3125rem;
-
 }
 
 .title {
@@ -429,7 +415,6 @@ textarea {
 	margin-right: 3.125rem;
 	max-width: 8.75rem;
 	max-height: 8.75rem;
-	
 }
 
 .description {
@@ -461,8 +446,7 @@ textarea {
 .quantity {
 	padding-top: 1.25rem;
 	margin-right: 4.0625rem;
-	width: 250px;
-
+	width: 15.625rem;
 }
 
 .quantity input {
@@ -523,13 +507,13 @@ h2 h3 h4 span {
 #releasebtn {
 	background-color: var(--pink);
 	color: var(--white);
-
 }
+
 #releasebtn:hover {
 	background-color: var(--white);
 	color: var(--green);
-
 }
+
 #product-btn {
 	background-color: var(--pink);
 	color: var(--white);
@@ -644,7 +628,6 @@ img {
 
 .flex-games {
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
 	align-content: flex-start;
 	width: 100%;
@@ -738,3 +721,6 @@ img {
 		color: var(--white);
 	}
 }
+
+
+
