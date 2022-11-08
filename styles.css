@@ -68,7 +68,6 @@ input {
 .checkout,
 .contactctn,
 .shipping,
-.buy,
 .container,
 .footer,
 .footerlogo div{
@@ -315,7 +314,6 @@ input[type=checkbox] {
 form {
 	border: none;
 }
-
 input[type=text],
 input[type=password],
 select,
@@ -363,10 +361,24 @@ textarea {
 	background-color: var(--white);
 	margin: 0 auto;
 	padding: 0.625rem;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 }
 
 .buy label, h3 {
 	color: var(--blue);
+}
+.buy_complete {
+	display: flex;
+	flex-direction: row;
+	width: 50rem;
+	height: 100%;
+	margin: 0 auto;
+	gap: 5px;
+	padding: 0.625rem;
+	background-color: var(--white);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
 
 /*shopping cart*/
@@ -380,6 +392,9 @@ textarea {
 	align-content: center;
 	color: var(--white);
 	align-items: center;
+}
+.shopwrapper a {
+	color: #46A637;
 }
 
 .shopping-cart {
@@ -546,10 +561,12 @@ h2 h3 h4 span {
 #btn-cart {
 	background-color: var(--pink);
 	color: var(--white);
+	margin: 0px;
 }
 #btn-cart:hover {
 	background-color: var(--white);
 	color: var(--pink);
+	margin: 0px;
 }
 #cancel-btn {
 	width: auto;
