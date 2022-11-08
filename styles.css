@@ -746,7 +746,7 @@ img {
   }
  
   .navbar #nav-check:checked ~ .nav-links {
-		height: 12.5rem;
+		height: 300px;
 		top: 5rem;
 	}
 	
