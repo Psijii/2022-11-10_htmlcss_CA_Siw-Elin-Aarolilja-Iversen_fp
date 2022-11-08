@@ -15,12 +15,6 @@ Responsive Web Design with HTML5 and CSS third edition by Ben Frain.
 	--font-size: 1em;
 }
 
-/*chrome img rendering fix, hopefully it works */
-img {
-	border: none;
-	transform: translateZ(1);
-}
-
 /*bg styles etc */
 body {
 	background-image: url('images/gamehubbg.jpg');
@@ -35,7 +29,9 @@ body {
 	padding: 0.9375rem;
 	color: var(--white);
 	z-index: 1;
-	
+}
+html {
+	image-rendering: pixelated;
 }
 label {
 	color: var(--blue);
@@ -166,6 +162,9 @@ input {
 }
 
 /*styling the navbar/headermenu*/
+.navbar #nav-check, .navbar .nav-btn{
+  display: none;
+}
 .navbar {
 	display: flex;
 	align-items: center;
@@ -292,7 +291,6 @@ input[type=checkbox] {
 
 .games {
 	display: flex;
-	flex-flow: space-between;
 	max-width: 12.5rem;
 }
 
@@ -500,7 +498,7 @@ h2 h3 h4 span {
 	font-size: large;
 	display: inline-block;
 	font-family: Arial, Helvetica, sans-serif;
-	font-weight: bold;
+	font-family: Jetbrains Mono;
 	margin: 0.625rem;
 	padding: 0.3125rem;
 	border: none;
@@ -609,8 +607,70 @@ h2 h3 h4 span {
 	width: 8.125rem;
 }
 /*new navbar test */
-
-
+/* responsive navbar toggle button */
+.navbar #nav-check, .navbar .nav-btn{
+  display: none;
+}
+@media (max-width:700px) {
+  .navbar .nav-btn{
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    right: 0px;
+  }
+  .navbar .nav-btn label {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    padding: 25px;
+  }
+  .navbar .nav-btn label span {
+    display: block;
+    height: 10px;
+    width: 25px;
+		border-top: 3px solid var(--white);
+		border-radius: 2px;
+  
+  }
+  .navbar .nav-links{
+    position: absolute;
+    display: block;
+    text-align: center;
+    width: 50%;
+    background-color: var(--blue);
+    overflow-y: hidden;
+    top: 70px;
+		right: 0px;
+		z-index: 0;
+  }
+  .navbar .nav-links a {
+		display: block;
+		padding: 10px;
+		
+  }
+ 
+  /* when nav toggle button not checked */
+  .navbar #nav-check:not(:checked) ~ .nav-links {
+		height: 0px;
+		
+  }
+ 
+  /* when nav toggle button is checked */
+  .navbar #nav-check:checked ~ .nav-links {
+		height: 200px;
+		top: 80px;
+    
+  }
+  .navbar .nav-links  {
+    padding: 0;
+    margin: 20px;
+    font-size:  18px;
+		color: rgb(9, 14, 90);
+		
+  }
+   
+ 
+}
 /*Media queries*/
 @media screen and 
 (max-width:20rem),
@@ -711,18 +771,55 @@ img {
 		padding: 1rem 0;
 		color:var(--white);
 	}
-
-	.menu li + li {
-		margin-top: 0.75rem;
-		color: var(--white);
-	}
-	input[type=checkbox]:checked ~ .menu{
+	.navbar .nav-btn{
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    right: 0px;
+  }
+  .navbar .nav-btn label {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    padding: 25px;
+  }
+  .navbar .nav-btn label span {
+    display: block;
+    height: 10px;
+    width: 25px;
+		border-top: 3px solid var(--white);
+		border-radius: 2px;
+  }
+  .navbar .nav-links{
+    position: absolute;
+    display: block;
+    text-align: center;
+    width: 50%;
+    background-color: var(--blue);
+    overflow-y: hidden;
+    top: 70px;
+		right: 0px;
+		z-index: 0;
+  }
+  .navbar .nav-links a {
 		display: block;
+		padding: 10px;
+  }
+   .navbar #nav-check:not(:checked) ~ .nav-links {
+		height: 0px;
+  }
+ 
+  .navbar #nav-check:checked ~ .nav-links {
+		height: 200px;
+		top: 80px;
 	}
-	.hamburger {
-		display: block;
+	
+  .navbar .nav-links  {
+    padding: 0;
+    margin: 20px;
+		font-size: 16px;
 		color: var(--white);
-	}
+  }
 }
 
 

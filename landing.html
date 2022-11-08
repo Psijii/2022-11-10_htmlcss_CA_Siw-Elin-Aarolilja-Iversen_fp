@@ -9,36 +9,39 @@
   <meta name="keywords" content="ps4, ps5, buy used games, sell used games, trading, gamehub">
   <link rel="stylesheet" href="styles.css">
   <script src="https://kit.fontawesome.com/03e5613b4c.js" crossorigin="anonymous"></script>
-  <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=JetBrains%20Mono' rel='stylesheet'>
 </head>
 <body>
-<header>
-	<nav class="navbar">
-	<!--gamehub logo and link-->
-	<div class="logo">
-		<a href="index.html">
-			<img class="logo" src="images/ghlogo.svg" alt="Go back to the home page"></a>
-	</div>
-	<!--navigation menu starts here-->
-	<ul class="nav-links">
-		<!--haxxign the checkbox-->
-		<input aria-hidden="true" type="checkbox" id="checkbox_toggle"/> 
-			<label aria-hidden="true" for="checkbox_toggle" class="hamburger">&#9776;</label>
-			<input aria-hidden="true" type="checkbox" id="checkbox_toggle"/>
-				<label aria-hidden="true" for="checkbox_toggle" class="hamburger"></label>
-				<!-- can't fix the empty and multiple forms due to hamburger haxx, tried with aria labels. -->
-		<!--actualy navigation menus-->
-		<div class="menu">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="games.html">Our games</a>
-			<li><a href="buysell.html">Buy & Sell</a></li>
-			<li><a href="contact.html">Contact</a></li>
-			<li><a href="cart.html">Shopping cart</a></li>
-		</div>
-	</ul>
-	</nav>
-</header>
+	<header>
+		<div class="navbar">
+		<!-- navbar logo -->
+			<div class="nav-header">
+				<div class="logo">
+					<a href="#">
+						<img src="images/ghlogo.svg" alt="logo">
+						</a>
+					</div>
+				</div>
+		<!-- responsive navbar toggle button -->
+			<input type="checkbox" id="nav-check">
+				<div class="nav-btn">
+					<label for="nav-check">
+						<span></span>
+						<span></span>
+						<span></span>
+					</label>
+				</div>
+				<!-- navbar links -->
+				<div class="nav-links">
+					<a href="index.html">Home</a>
+					<a href="about.html">About</a>
+					<a href="games.html">Our games</a>
+					<a href="buysell.html">Buy & Sell</a>
+					<a href="contact.html">Contact</a>
+					<a href="cart.html">Shopping cart</a>
+				</div>
+			</div>
+		</header>
 <h1>Thank you for ordering with us </h1>
 
  <div class="shopwrapper">	
