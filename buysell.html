@@ -42,12 +42,12 @@
 <div class="container">
 	<p>To buy or sell games on GameHub<br>Please log in to your user account </p>
 	<form>      
-		<label>Username: </label>   
-			<input type="text" placeholder="Enter Username" name="username" required>  
-			<label>Password: </label>   
-		<input type="password" placeholder="Enter Password" name="password" required>  
-			<input type="button" id="login-btn" class="allbuttons" value="Log in" />
-			<input type="button" id="cancel-btn" class="allbuttons" value="Cancel" />	
+		<label for="username">Username: </label>   
+			<input type="text" id="username" placeholder="Enter Username" name="username" required>  
+			<label for="password">Password: </label>   
+		<input type="password" id="password" placeholder="Enter Password" name="password" required>  
+			<input aria-label="login" type="button" id="login-btn" class="allbuttons" value="Log in" />
+			<input aria-label="cancel" type="button" id="cancel-btn" class="allbuttons" value="Cancel" />	
 		</form> 
 </div> 
 </div>  <!--end of wrapper div-->
