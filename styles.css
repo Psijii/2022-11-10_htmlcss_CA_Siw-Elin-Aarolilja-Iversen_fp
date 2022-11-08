@@ -542,7 +542,7 @@ h2 h3 h4 span {
 }
 #price-btn {
 	background-color: var(--green);
-	color: #d8eed5;
+	color: var(--white);
 	margin: 0px;
 }
 #price-btn:hover {
