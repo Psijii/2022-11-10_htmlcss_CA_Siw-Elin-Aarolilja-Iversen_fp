@@ -22,8 +22,11 @@
 <!--navigation menu starts here-->
 <ul class="nav-links">
 	<!--haxxign the checkbox-->
-	<input type="checkbox" id="checkbox_toggle"/>
-	<label for="checkbox_toggle" class="hamburger">&#9776;</label>
+	<input aria-hidden="true" type="checkbox" id="checkbox_toggle"/> 
+		<label aria-hidden="true" for="checkbox_toggle" class="hamburger">&#9776;</label>
+		<input aria-hidden="true" type="checkbox" id="checkbox_toggle"/>
+			<label aria-hidden="true" for="checkbox_toggle" class="hamburger"></label>
+			<!-- can't fix the empty and multiple forms due to hamburger haxx, tried with aria labels. -->
 	<!--actualy navigation menus-->
 	<div class="menu">
 		<li><a href="index.html">Home</a></li>
@@ -57,7 +60,7 @@
 	<div class="footerlogo">
 		<a aria-label="index" href="index.html">
 			<img src="images/ghlogo.svg" alt="GameHub Logo"></a>
-			<a aria-label="about" href="about.html"><input type="button" id="btn-used" class="allbuttons" value="About us" title="aboutus" />
+			<a aria-label="about" href="about.html" alt="About GameHub"><input type="button" id="btn-used" class="allbuttons" value="About us" title="aboutus" />
 		<p>Noroff FED CA autumn 2022 Siw Elin Årolilja Iversen
 		</p> 
 	</div>
