@@ -3,7 +3,7 @@ past experiences as a web designer,
 both freelance and professionally years 2003-2016.
 
 Book used to learn responsive design, flexbox and grid: 
-Responsive Web Design with HTML5 and CSS third edition by Ben Frain.
+Responsive Web Design with HTML5 and CSS third edition by Ben Frain. */
 
 
 /* root styles*/
@@ -724,7 +724,6 @@ img {
     height: 0.625rem;
     width: 1.5625rem;
 		border-top: 0.1875rem solid var(--white);
-		border-radius: 0.125rem;
   }
   .navbar .nav-links{
     position: absolute;
