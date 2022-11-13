@@ -1,9 +1,3 @@
-/*sources for code:
-past experiences as a web designer, 
-both freelance and professionally years 2003-2016.
-
-Book used to learn responsive design, flexbox and grid: 
-Responsive Web Design with HTML5 and CSS third edition by Ben Frain. */
 
 
 /* root styles*/
@@ -14,7 +8,6 @@ Responsive Web Design with HTML5 and CSS third edition by Ben Frain. */
 	--green: #2d7a17;
 	--font-size: 1em;
 }
-
 /*bg styles etc */
 body {
 	background-image: url('images/gamehubbg.jpg');
@@ -30,7 +23,12 @@ body {
 	color: var(--white);
 	z-index: 1;
 }
-
+fieldset {
+	border-radius: 5px;
+}
+legend {
+	color: var(--blue);
+}
 label {
 	color: var(--blue);
 }
@@ -38,11 +36,9 @@ h1 {
 	text-align: center;
 	color: var(--white);
 }
-
 h2 {
 	color: var(--green);
 }
-
 a,
 li,
 p {
@@ -50,7 +46,6 @@ p {
 	text-decoration: none;
 	color: var(--white)
 }
-
 img,
 input {
 	border-radius: 0.3125rem;
@@ -106,7 +101,6 @@ input {
 }
 
 /*latest games gallery*/
-
 .overlay {
 	text-align: center;
 	color: var(--white);
@@ -190,7 +184,6 @@ input {
 	font-size: 1.125rem;
 	z-index: 1;
 	padding: 0.625rem;
-	
 }
 
 .menu li {
@@ -286,7 +279,6 @@ input[type=checkbox] {
 }
 
 /* games, content, and headlines */
-
 .games {
 	display: flex;
 	max-width: 12.5rem;
@@ -297,7 +289,6 @@ input[type=checkbox] {
 }
 
 /* login-form, dummy version */
-
 form {
 	border: none;
 }
@@ -315,6 +306,7 @@ textarea {
 	margin-bottom: 1rem;
 	resize: vertical;
 }
+
 .container {
 	padding: 1.5625rem;
 	max-width: 21.875rem;
@@ -338,7 +330,6 @@ textarea {
 }
 
 /* checkout */
-
 .buy {
 	display: flex;
 	flex-wrap: nowrap;
@@ -581,8 +572,6 @@ h2 h3 h4 span {
 	background-color: var(--white);
 }
 
-
-
 /*footer styles*/
 .footer {
 	background: rgba(234, 177, 233, 0.36);
@@ -643,7 +632,6 @@ img {
 	.flex-container {
 		flex-direction: column;
 		width: 100%;
-		
 	}
 
 	.releaseflex {
@@ -655,7 +643,6 @@ img {
 	.flex-index {
 		flex-direction: column;
 		width: 100%;
-		
 	}
 
 	.wrapper {
@@ -697,6 +684,7 @@ img {
 		flex-wrap: wrap;
 		justify-content: center;
 	}
+
 	.menu { 
 		display:none;
 		position: absolute;
@@ -707,24 +695,28 @@ img {
 		padding: 1rem 0;
 		color:var(--white);
 	}
+
 	.navbar .nav-btn{
     display: inline-block;
     position: absolute;
     top: 1.875rem;
     right: 0px;
   }
+
   .navbar .nav-btn label {
     display: inline-block;
     width: 5rem;
     height: 5rem;
     padding: 1.5625rem;
   }
+
   .navbar .nav-btn label span {
     display: block;
     height: 0.625rem;
     width: 1.5625rem;
 		border-top: 0.1875rem solid var(--white);
   }
+
   .navbar .nav-links{
     position: absolute;
     display: block;
@@ -736,10 +728,12 @@ img {
 		right: 0px;
 		z-index: 0;
   }
+
   .navbar .nav-links a {
 		display: block;
 		padding: 0.625rem;
   }
+	
    .navbar #nav-check:not(:checked) ~ .nav-links {
 		height: 0px;
   }
