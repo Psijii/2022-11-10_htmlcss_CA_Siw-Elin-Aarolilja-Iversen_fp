@@ -154,54 +154,36 @@ input {
 }
 
 /*styling the navbar/headermenu*/
-.navbar #nav-check, .navbar .nav-btn{
-  display: none;
-}
-.navbar {
+ul.navbar {
 	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 0.625rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
 	background-color: var(--blue);
-	margin: auto;
-	z-index: 1;
-}
-
-.nav-links a {
-	color: var(--white);
-	padding-left: 0.625rem;
-}
-
-.nav-links a:hover {
-	color: #E21CE0;
-}
-
-.menu {
-	display: flex;
+	height: 80px;
 	justify-content: center;
 	align-items: center;
-	gap: 1em;
-	font-size: 1.125rem;
-	z-index: 1;
-	padding: 0.625rem;
+	
 }
 
-.menu li {
-	padding: 0.3125rem 0.875rem;
+ul.navbar li {
+	text-align: center;
+	position: relative;
 }
 
-/*responsive menu haxx*/
-input[type=checkbox] {
-	display: none;
+ul.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
+a:hover {
 
-/*hamburger menu*/
-.hamburger {
-	display: none;
-	font-size: 1.5rem;
-	user-select: none;
+  color: #E21CE0;
+
 }
-
 /*game info grid alignments */
 .grid_info {
 	display: grid;
@@ -594,7 +576,6 @@ h2 h3 h4 span {
 .logo img {
 	width: 8.125rem;
 }
-/*new navbar test */
 
 /*Media queries*/
 @media screen and 
@@ -604,11 +585,20 @@ h2 h3 h4 span {
 (max-width:60.0625rem),
 (max-width:64.0625rem) {
 
+	nav ul {
+		display: flex;
+		font-size: 16px;
+		float: left;
+		flex-wrap: wrap;
+		width: 100%;
+	}
 div,
 img {
 	border-radius: 0.3125rem;
 }
-
+.logo img {
+	display: none;
+}
 .buy {
 	width: 100%;
 	height: 100%;
@@ -684,72 +674,6 @@ img {
 		flex-wrap: wrap;
 		justify-content: center;
 	}
-
-	.menu { 
-		display:none;
-		position: absolute;
-		background-color:var(--blue);
-		right: 0;
-		left: 0;
-		text-align: center;
-		padding: 1rem 0;
-		color:var(--white);
-	}
-
-	.navbar .nav-btn{
-    display: inline-block;
-    position: absolute;
-    top: 1.875rem;
-    right: 0px;
-  }
-
-  .navbar .nav-btn label {
-    display: inline-block;
-    width: 5rem;
-    height: 5rem;
-    padding: 1.5625rem;
-  }
-
-  .navbar .nav-btn label span {
-    display: block;
-    height: 0.625rem;
-    width: 1.5625rem;
-		border-top: 0.1875rem solid var(--white);
-  }
-
-  .navbar .nav-links{
-    position: absolute;
-    display: block;
-    text-align: center;
-    width: 50%;
-    background-color: var(--blue);
-    overflow-y: hidden;
-    top: 4.375rem;
-		right: 0px;
-		z-index: 0;
-  }
-
-  .navbar .nav-links a {
-		display: block;
-		padding: 0.625rem;
-  }
-	
-   .navbar #nav-check:not(:checked) ~ .nav-links {
-		height: 0px;
-  }
- 
-  .navbar #nav-check:checked ~ .nav-links {
-		height: 300px;
-		top: 5rem;
-	}
-	
-  .navbar .nav-links  {
-    padding: 0;
-    margin: 1.25rem;
-		font-size: 1rem;
-		color: var(--white);
-  }
 }
-
 
 
