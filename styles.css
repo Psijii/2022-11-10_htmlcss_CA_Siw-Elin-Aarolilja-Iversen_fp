@@ -158,13 +158,12 @@ ul.navbar {
 	display: flex;
   list-style-type: none;
   margin: 0;
-  padding: 10px;
+  padding: 5px;
   overflow: hidden;
 	background-color: var(--blue);
 	height: 80px;
 	justify-content: center;
 	align-items: center;
-	
 }
 
 ul.navbar li {
@@ -180,7 +179,6 @@ ul.navbar li a {
   text-decoration: none;
 }
 a:hover {
-
   color: #E21CE0;
 
 }
@@ -474,8 +472,28 @@ h2 h3 h4 span {
 	margin: 0.625rem;
 	padding: 0.3125rem;
 	border: none;
+	width: 130px;
 }
-
+.price-btn {
+	background-color: var(--green);
+	color: var(--white);
+	margin: 0px;
+}
+.price-btn:hover {
+	background-color: var(--white);
+	color: var(--green);
+	margin: 0px;
+}
+.product-btn {
+	background-color: var(--pink);
+	color: var(--white);
+	margin: 0px;
+}
+.product-btn:hover {
+	background-color: var(--white);
+	color: var(--pink);
+	margin: 0px;
+}
 #releasebtn {
 	background-color: var(--pink);
 	color: var(--white);
@@ -486,26 +504,8 @@ h2 h3 h4 span {
 	color: var(--green);
 }
 
-#product-btn {
-	background-color: var(--pink);
-	color: var(--white);
-	margin: 0px;
-}
-#product-btn:hover {
-	background-color: var(--white);
-	color: var(--pink);
-	margin: 0px;
-}
-#price-btn {
-	background-color: var(--green);
-	color: var(--white);
-	margin: 0px;
-}
-#price-btn:hover {
-	background-color: var(--white);
-	color: var(--green);
-	margin: 0px;
-}
+
+
 #btn-used {
 	color: var(--blue);
 	background-color: var(--white);

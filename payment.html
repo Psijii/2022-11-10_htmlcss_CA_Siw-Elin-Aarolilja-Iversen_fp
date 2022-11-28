@@ -12,36 +12,22 @@
   <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
 </head>
 <body>
-  <header>
-    <div class="navbar">
-    <!-- navbar logo -->
-      <div class="nav-header">
-        <div class="logo">
-          <a href="#">
-            <img src="images/ghlogo.png" alt="logo">
-            </a>
-          </div>
-        </div>
-    <!-- responsive navbar toggle button -->
-      <input type="checkbox" id="nav-check">
-        <div class="nav-btn">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
-        <!-- navbar links -->
-        <div class="nav-links">
-          <a href="index.html" alt="Back to GameHub's main site">Home</a>
-          <a href="about.html" alt="About GameHub">About</a>
-          <a href="games.html" alt="GameHub's games">Our games</a>
-          <a href="buysell.html" alt="Buy or sell used games">Buy & Sell</a>
-          <a href="contact.html" alt="Contact GameHub">Contact</a>
-          <a href="cart.html" alt="Shopping cart on GameHub">Shopping cart</a>
-        </div>
-      </div>
-    </header>
+	<header>
+		<nav>
+			<ul class="navbar">
+				<div class="logo">
+					<a href="index.html">
+						<img src="images/ghlogo.png" alt="GameHub logo"></a>
+					</div>
+				<li><a href="about.html">About</a></li>
+				<li><a href="games.html">Games</a></li>
+				<li><a href="buysell.html">Buy & Sell</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="cart.html">Cart</a></li>
+			 </ul>
+		</nav>          
+ </header>
+<main class="mywrapper">
 <h1>Checkout and payment</h1>
 <div class="buy">
   <fieldset>
@@ -78,10 +64,10 @@
 </fieldset>
 </div> 
 <div class="buy_complete">
-  <a aria-label="purchase" href="landing.html"><input type="button" id="price-btn" class="allbuttons" value="Purchase" title="purchase"></a>
+  <a aria-label="purchase" href="landing.html"><input type="button" class="price-btn allbuttons" value="Purchase" title="purchase"></a>
   <a aria-label="cancel" href="cart.html"><input type="button" id="btn-cart" class="allbuttons" value="Cancel" title="cancel"></a>
 </div>
-
+</main>
 <div class="footer">
   <div class="footerlogo">
     <a aria-label="index" href="index.html"><img src="images/ghlogo.png" alt="GameHub Logo"></a>
