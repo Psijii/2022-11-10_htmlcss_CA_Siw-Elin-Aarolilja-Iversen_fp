@@ -162,8 +162,12 @@ ul.navbar {
   overflow: hidden;
 	background-color: var(--blue);
 	height: 80px;
+	width: 100%;
 	justify-content: center;
 	align-items: center;
+	top: 0;
+	position: fixed;
+	margin-bottom: 10px;
 }
 
 ul.navbar li {
@@ -626,7 +630,7 @@ img {
 	border-radius: 0.3125rem;
 }
 .logo img {
-	display: none;
+	width: 70px;
 }
 .buy {
 	width: 100%;
