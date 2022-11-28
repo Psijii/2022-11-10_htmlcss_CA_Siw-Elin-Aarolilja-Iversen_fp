@@ -79,6 +79,10 @@ input {
 	align-items: center;
 }
 
+.cyberpunkwrapper {
+	margin-top: 100px;
+}
+
 /* flex alignments for games */
 .flex-games {
 	display: flex;
@@ -167,7 +171,8 @@ ul.navbar {
 	align-items: center;
 	top: 0;
 	position: fixed;
-	margin-bottom: 10px;
+
+
 }
 
 ul.navbar li {
@@ -570,6 +575,10 @@ h2 h3 h4 span {
 	height: 1.875rem;
 	background-color: var(--white);
 }
+
+
+
+
 
 /*footer styles*/
 .footer {
