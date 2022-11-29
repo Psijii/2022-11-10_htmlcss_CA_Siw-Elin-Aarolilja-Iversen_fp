@@ -7,49 +7,32 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Latest release from GameHub is Cyberpunk">
   <meta name="keywords" content="ps4, ps5, buy used games, sell used games, trading, gamehub">
-  <title>GameHub - The universe of games</title>
-   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
   <script src="https://kit.fontawesome.com/03e5613b4c.js" crossorigin="anonymous"></script>
   <link href='https://fonts.googleapis.com/css?family=JetBrains%20Mono' rel='stylesheet'>
 </head>
 <body>
 	<header>
-		<div class="navbar">
-		<!-- navbar logo -->
-			<div class="nav-header">
-				<div class="logo">
-					<a href="#">
-						<img src="images/ghlogo.png" alt="logo">
-						</a>
-					</div>
-				</div>
-		<!-- responsive navbar toggle button -->
-			<input type="checkbox" id="nav-check">
-				<div class="nav-btn">
-					<label for="nav-check">
-						<span></span>
-						<span></span>
-						<span></span>
-					</label>
-				</div>
-				<!-- navbar links -->
-				<div class="nav-links">
-					<a href="index.html">Home</a>
-					<a href="about.html">About</a>
-					<a href="games.html">Our games</a>
-					<a href="buysell.html">Buy & Sell</a>
-					<a href="contact.html">Contact</a>
-					<a href="cart.html">Shopping cart</a>
-				</div>
-			</div>
-		</header>
+		<nav>
+			<ul class="navbar">
+				<li class="logo">
+					<a href="index.html">
+						<img src="images/ghlogo.png" alt="GameHub logo"></a>
+					</li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="games.html">Games</a></li>
+				<li><a href="buysell.html">Buy & Sell</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="cart.html">Cart</a></li>
+			 </ul>
+		</nav>          
+ </header>
 
-<!--cyberpunk info alignments-->
-<div class="mywrapper">
+<main class="mywrapper cyberpunkwrapper">
 <div class="grid_info ">
   <div class="grid_gameimg"><img src="images/GameHub_covers9.jpg" alt="Cyberpunk"></div>
   <div class="grid_buy">
-   <input type="button" id="price-btn" class="allbuttons" value="€29,99" />&nbsp;<a href="cart.html"><input type="button" id="price-btn" class="allbuttons" value="Add to cart" /></a>
+   <div class="allbuttons price-btn" >€29,99</div><a href="cart.html"><div id="price-btn" class="allbuttons">Add to cart</div></a>
 </div>
     <div class="grid_gameinfo"> <h2>IMMORTAL IN CYBERPUNK</h2>
       <p>
@@ -70,8 +53,8 @@
    eu Vestibulum sed ipsum ac enim iaculis venenatis. Maecenas sit amet sagittis urna, ut posuere orci.
    </p></div>
 </div>
-</div><!--end of wrapper div-->
 
+</main>
 <div class="footer">
   <div class="footerlogo">
     <a aria-label="index" href="index.html"><img src="images/ghlogo.png" alt="GameHub Logo"></a>
