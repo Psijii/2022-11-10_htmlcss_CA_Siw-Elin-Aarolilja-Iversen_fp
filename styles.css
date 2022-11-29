@@ -158,13 +158,15 @@ ul.navbar {
 	display: flex;
   list-style-type: none;
   margin: 0;
-  padding: 10px;
+  padding-bottom: 10px;
   overflow: hidden;
 	background-color: var(--blue);
 	height: 80px;
 	justify-content: center;
 	align-items: center;
-	
+	z-index: 9999;
+	position: fixed;
+  top: 0;
 }
 
 ul.navbar li {
