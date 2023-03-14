@@ -8,6 +8,8 @@ function myFunction() {
       x.className = "topnav";
     }
   }
+
+
   
   //slider
   var responsiveSlider = function() {

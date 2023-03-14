@@ -1,3 +1,45 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: normal;
+  align-content: normal;
+	gap: 10px;
+}
+
+.flex-container img {
+	width: 240px;
+}
+
+.flex-items:nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(2) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(3) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+
 
 /*game info grid alignments */
 .grid_info {
@@ -52,6 +94,7 @@
 	flex-wrap: wrap;
 	gap: 0.3125rem;
 	row-gap: 0.625rem;
+	width: 900px;
 }
 
 .product_card {

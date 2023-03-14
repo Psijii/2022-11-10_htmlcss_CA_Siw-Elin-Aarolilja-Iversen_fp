@@ -5,30 +5,20 @@
 	--white: #F2F2F2;
 	--green: #2d7a17;
 	--font-size: 1em;
+	--brightpink: #E21CE0;
 }
 /*select text*/
 ::selection {
-	color: #E21CE0;
+	color: vaR(--brightpink);
 	background: var(--white);
 }
 a:hover {
-	color: #E21CE0;
+	color: var(--brightpink);
 
 }
 /*bg styles etc */
-body {
-	background-image: url('images/gamehubbg.jpg');
-	height: 100%;
-	background-size: 85%;
-	background-position: top, center;
-	background-repeat: no-repeat;
-	background-color: var(--blue);
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: var(--font-size);
-	overflow-x: hidden;
-	padding: 0.9375rem;
-	color: var(--white);
-	z-index: 1;
+img {
+	box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 fieldset {
@@ -45,17 +35,18 @@ label {
 
 h1 {
 	text-align: center;
-	color: var(--white);
 }
 
-h2 {
-	color: var(--green);
+#about_p {
+	color: rgb(110, 110, 110);
+	font-size: 12px;
 }
 
 a,
 li,
+i,
 p,
-i {
+h1 {
 	list-style: none;
 	text-decoration: none;
 	color: var(--white)
@@ -67,7 +58,7 @@ input {
 }
 
 i:hover {
-	background-color: var(--pink);
+	color: var(--brightpink);
 }
 
 .subtotal,
@@ -84,12 +75,3 @@ i:hover {
 
 
 
-/*allround wrapper */
-.mywrapper {
-	margin: 0 auto;
-	min-width: 20rem;
-	max-width: 75rem;
-	align-content: center;
-	color: var(--white);
-	align-items: center;
-}

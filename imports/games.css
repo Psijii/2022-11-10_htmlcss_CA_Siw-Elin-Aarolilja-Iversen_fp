@@ -25,7 +25,7 @@
 /*latest games gallery*/
 .overlay {
 	text-align: center;
-	color: var(--white);
+	margin-top: 30px;
 }
 
 .overlay img {
@@ -78,7 +78,7 @@
 /* games, content, and headlines */
 .games {
 	display: flex;
-	max-width: 12.5rem;
+	max-width: 280px;
 }
 
 .games img {
