@@ -11,7 +11,7 @@
 @import "imports/topnav.css";
 
 body {
-	background-image: url('images/gamehubbg.jpg');
+	background-image: url(images/gamehubbg.jpg);
 	height: 100%;
 	background-size: 85%;
 	background-position: top, center;
