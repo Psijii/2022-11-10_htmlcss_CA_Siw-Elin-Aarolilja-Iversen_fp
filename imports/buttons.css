@@ -33,6 +33,7 @@
 	background-color: var(--green);
 	color: var(--white);
 	margin: 0px;
+	border: 1px solid var(--green);
 }
 
 .price-btn:hover {
@@ -99,11 +100,13 @@
 	width: auto;
 	color: var(--blue);
 	border: 1px solid lightgrey;
+	margin: 0px;
 }
 
 #cancel-btn:hover {
 	color: red;
 	border: 1px solid red;
+	margin: 0px;
 }
 
 #login-btn {

@@ -40,24 +40,6 @@
 	transition: filter 2s ease-out 0.1ms;
 }
 
-.releaseflex {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	max-width: 12.5rem;
-}
-
-.gameinfo {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	margin: auto;
-}
-
-.gameinfo img {
-	max-width: 18.75rem;
-}
 
 .gameprice {
 	display: flex;
