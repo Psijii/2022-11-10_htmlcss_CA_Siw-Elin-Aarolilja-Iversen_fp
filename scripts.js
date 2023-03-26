@@ -1,5 +1,5 @@
 //responsive topnav
-function myFunction() {
+function menubar() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";

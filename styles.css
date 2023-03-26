@@ -25,7 +25,7 @@ body {
 }
 /*allround wrapper */
 .mywrapper {
-	margin: 0 auto;
+	margin: auto;
 	min-width: 20rem;
 	max-width: 88%;
 	height: auto;
@@ -34,3 +34,5 @@ body {
 	margin-top: 90px;
 	margin-bottom: 10px;
 }
+
+
