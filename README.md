@@ -18,6 +18,9 @@ The entire site is designed in Figma. During development it was tested in WAVE t
 
 gameHUB is styled as a blog and review site for games, the games that are reviewed are the same games that gameHUB sells.
 
+## Development
+The site is built entirely in HTML and CSS, with focus on making it much as possible mobile-friendly. 
+
 ### Dependencies
 
 A working computer and/or phone. It's supposed to be mobile-friendly, tablet-friendly, as well as web-friendly.
