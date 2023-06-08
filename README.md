@@ -1,13 +1,6 @@
 
 
-Course assignment for Siw Elin Årolilja Iversen - FED autumn 2022
-
-
-  https://classy-zuccutto-df3341.netlify.app/ Live version.
-
-
-Book used to learn responsive design, flexbox and grid
-Responsive Web Design with HTML5 and CSS third edition by Ben Frain.
+# Course assignment for Siw Elin Årolilja Iversen - FED autumn 2022
 
 
 # gameHUB
